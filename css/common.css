@@ -127,3 +127,7 @@ table {
   --main-text-color: #000;
 }
 /*COLOR VARIABLES END*/
+
+body {
+  background-color: #1a1d29;
+}
