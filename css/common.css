@@ -130,4 +130,9 @@ table {
 
 body {
   background-color: #1a1d29;
+  font-family: 'Roboto Flex', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'slnt' 0, 'wdth' 114.2, 'GRAD' 0, 'XOPQ' 96, 'XTRA' 600, 'YOPQ' 79,
+    'YTAS' 740, 'YTDE' -180, 'YTFI' 738, 'YTLC' 530, 'YTUC' 690;
 }
