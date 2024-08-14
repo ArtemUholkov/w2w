@@ -1,0 +1,35 @@
+.st_main {
+  height: 100svh;
+  width: 100svw;
+  overflow: hidden;
+  position: relative;
+}
+.st_main_video {
+  height: 100svh;
+  width: 100svw;
+  position: relative;
+}
+.st_main_video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100svw;
+  height: 100svh;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+.st_main_cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100svw;
+  height: 100svh;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+}
