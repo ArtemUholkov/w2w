@@ -1,6 +1,74 @@
 .st_before-after {
   padding-top: 200px;
   width: 100%;
+  position: relative;
+}
+.gradient3 {
+  position: absolute;
+  top: 50%;
+  left: 40%; /* Shifted left */
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(52, 180, 244, 1) 0%, rgba(52, 180, 244, 0) 70%);
+  filter: blur(150px) brightness(1.1);
+  transform: translate(-80%, -50%); /* Adjusted to shift more to the left */
+  z-index: 1;
+  animation: glow3 3s infinite alternate;
+}
+
+/* Gradient 2 */
+.gradient4 {
+  position: absolute;
+  top: 50%;
+  left: 40%; /* Shifted left */
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(232, 117, 148, 1) 0%, rgba(232, 117, 148, 0) 70%);
+  filter: blur(105px) brightness(1.1);
+  transform: translate(-80%, -50%); /* Adjusted to shift more to the left */
+  z-index: 2;
+  animation: glow4 3s infinite alternate-reverse;
+}
+
+/* Animations with synchronized and independent moves */
+@keyframes glow3 {
+  0% {
+    opacity: 1;
+    transform: translate(-80%, -50%) scale(1); /* Starting more to the left */
+  }
+  25% {
+    transform: translate(calc(-80% + 100px), calc(-50% + 50px)) scale(1.05);
+  }
+  50% {
+    transform: translate(calc(-80% - 100px), calc(-50% + 100px)) scale(1.1);
+  }
+  75% {
+    transform: translate(calc(-80% - 50px), calc(-50% - 100px)) scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-80% + 100px), calc(-50% - 50px)) scale(1.1);
+  }
+}
+
+@keyframes glow4 {
+  0% {
+    opacity: 1;
+    transform: translate(-60%, -50%) rotate(0deg) scale(1); /* Starting more to the left */
+  }
+  25% {
+    transform: translate(calc(-60% + 100px), calc(-50% + 50px)) rotate(0deg) scale(1.05);
+  }
+  50% {
+    transform: translate(calc(-60% - 100px), calc(-50% + 100px)) rotate(0deg) scale(1.1);
+  }
+  75% {
+    transform: translate(calc(-60% + 50px), calc(-50% - 50px)) rotate(0deg) scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-60% - 50px), calc(-50% + 50px)) rotate(0deg) scale(1.1);
+  }
 }
 .st_before-after_title {
   color: #fff;
@@ -32,6 +100,7 @@
   border-radius: 24px;
   background: #0d0f15;
   position: relative;
+  z-index: 3;
 }
 .st_bef-aft_left_item {
   align-self: flex-start;

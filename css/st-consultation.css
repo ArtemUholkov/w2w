@@ -170,11 +170,22 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   border: 0;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 .st_cons_submit_arrow-icon {
   width: 24px;
   height: 24px;
 }
+.st_cons_submit:hover .st_cons_submit_arrow-icon {
+  left: 5px;
+  transition: all 0.3s;
+}
+.st_cons_submit:hover {
+  transition: all 0.3s;
+  background: #95d8f9;
+}
+
 .st_mobile {
   display: none;
 }

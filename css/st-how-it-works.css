@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0 auto;
   padding-top: 200px;
+  position: relative;
 }
 .st_hiw_wrapper {
   display: flex;
@@ -109,6 +110,125 @@
   opacity: 1;
   transition: all 0.8s;
 }
+.st_hiw_step {
+  z-index: 5;
+}
+.st_hiw_button_wrapper {
+  align-self: flex-end;
+  width: 168px;
+  margin-right: 250px;
+}
+.st_hiw_button {
+  border-radius: 40px;
+  background: #34b4f4;
+  color: #26355e;
+  font-family: 'Roboto Flex';
+  font-size: 12px;
+  font-weight: 1000;
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 70px;
+  max-width: 190px;
+  width: 165px;
+  padding: 14px 20px;
+  gap: 4px;
+  white-space: nowrap;
+  transition: all 0.3s;
+  align-self: flex-end;
+}
+.st_cons_submit_arrow-icon {
+  position: relative;
+  left: 0;
+  transition: all 0.3s;
+}
+.st_hiw_button:hover .st_cons_submit_arrow-icon {
+  left: 5px;
+  transition: all 0.3s;
+}
+.st_hiw_button:hover {
+  width: 168px;
+  transition: all 0.3s;
+  background: #95d8f9;
+}
+
+.gradient1 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(52, 180, 244, 1) 0%, rgba(52, 180, 244, 0) 70%);
+  filter: blur(200px) brightness(1.1); /* Increased blur and brightness */
+  transform: translate(-60%, -50%);
+  z-index: 1;
+  animation: glow1 3s infinite alternate;
+}
+
+/* Gradient 2 */
+.gradient2 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(232, 117, 148, 1) 0%, rgba(232, 117, 148, 0) 70%);
+  filter: blur(150px) brightness(1.1); /* Increased blur and brightness */
+  transform: translate(-60%, -50%);
+  z-index: 2;
+  animation: glow2 3s infinite alternate-reverse;
+}
+
+/* Animations with synchronized and independent moves */
+@keyframes glow1 {
+  0% {
+    opacity: 0.8; /* Increased opacity */
+    transform: translate(-60%, -50%) scale(1);
+  }
+  25% {
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% + 100px), calc(-50% + 50px)) scale(1.05);
+  }
+  50% {
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% - 100px), calc(-50% + 100px)) scale(1.1);
+  }
+  75% {
+    opacity: 0.9; /* Slight fade */
+    transform: translate(calc(-60% - 50px), calc(-50% - 100px)) scale(1.05);
+  }
+  100% {
+    opacity: 0.8; /* Return to initial glow */
+    transform: translate(calc(-60% + 100px), calc(-50% - 50px)) scale(1.1);
+  }
+}
+
+@keyframes glow2 {
+  0% {
+    opacity: 0.8; /* Increased opacity */
+    transform: translate(-60%, -50%) rotate(0deg) scale(1);
+  }
+  25% {
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% + 100px), calc(-50% + 50px)) rotate(0deg) scale(1.05);
+  }
+  50% {
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% - 100px), calc(-50% + 100px)) rotate(0deg) scale(1.1);
+  }
+  75% {
+    opacity: 0.9; /* Slight fade */
+    transform: translate(calc(-60% + 50px), calc(-50% - 50px)) rotate(0deg) scale(1.05);
+  }
+  100% {
+    opacity: 0.8; /* Return to initial glow */
+    transform: translate(calc(-60% - 50px), calc(-50% + 50px)) rotate(0deg) scale(1.1);
+  }
+}
 @media (max-width: 1500px) {
   .st_hiw_steps {
     justify-content: center;
@@ -121,6 +241,18 @@
   }
 }
 @media (max-width: 980px) {
+  .gradient1 {
+    display: none;
+  }
+  .gradient2 {
+    display: none;
+  }
+  .gradient3 {
+    display: none;
+  }
+  .gradient4 {
+    display: none;
+  }
   .step-two {
     flex-direction: row-reverse;
   }

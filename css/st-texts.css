@@ -6,11 +6,50 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
+  position: relative;
+  z-index: 2;
+}
+.gradient-left {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 0; /* Align to the left */
+  width: 300px; /* Diameter of the circle */
+  height: 300px;
+  background: radial-gradient(circle, rgba(52, 180, 244, 1) 0%, rgba(52, 180, 244, 0) 70%);
+  transform: translate(-50%, -50%); /* Center the circle */
+  opacity: 0;
+  animation: fadeInOutsec 3s infinite;
+  z-index: 5;
+}
+
+/* Animation */
+@keyframes fadeInOutsec {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(-100px); /* Start position: moved up */
+  }
+  25% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0px); /* Move to original position */
+  }
+  50% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(100px); /* Move down */
+  }
+  75% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0px); /* Return to original position */
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(-100px); /* End position: moved up */
+  }
 }
 .st_texts_wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  z-index: 2;
 }
 .st_texts_title {
   color: #34b4f4;
