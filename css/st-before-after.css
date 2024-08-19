@@ -1,0 +1,144 @@
+.st_before-after {
+  padding-top: 200px;
+  width: 100%;
+}
+.st_before-after_title {
+  color: #fff;
+  font-family: 'Roboto Flex';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 110%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-left: 250px;
+  max-width: 1670px;
+  margin-bottom: 150px;
+}
+.st_before-after_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 50px;
+}
+
+.st_before_after_item {
+  max-width: 60%;
+  width: 100%;
+  padding: 26px 125px 26px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 24px;
+  background: #0d0f15;
+  position: relative;
+}
+.st_bef-aft_left_item {
+  align-self: flex-start;
+  align-items: flex-end;
+}
+.st_before_after_item_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+}
+.st_before_after_item_name {
+  color: #fff;
+  font-family: 'Roboto Flex';
+  font-size: 24px;
+  font-weight: 1000;
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.st_before_after_item_stars {
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 7.5px;
+}
+.st_before-after_star {
+  width: 23.726px;
+  height: 22.696px;
+}
+.st_before_after_item_text {
+  color: #f7f3eb;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.2px;
+}
+.st_before_after_images_wrapper {
+  position: absolute;
+  right: 25%;
+  top: -57px;
+  height: 368px;
+  width: 277px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.st_before_after_image_before,
+.st_before_after_image_after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 368px;
+  width: 277px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.st_before_after_image_before {
+  animation: fadeInOut 6s infinite;
+}
+
+.st_before_after_image_after {
+  animation: fadeInOut 6s infinite 3s; /* Delayed by 3 seconds to alternate with the first image */
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+.st_before_after_images_wrapper_left {
+  right: initial;
+  left: 15%;
+}
+
+@media (max-width: 1750px) {
+  .st_before_after_images_wrapper {
+    right: 10%;
+  }
+  .st_before_after_images_wrapper_left {
+    left: 5%;
+  }
+  .st_before_after_item {
+    max-width: 75%;
+  }
+  .st_before-after_wrapper {
+    gap: 70px;
+  }
+}
+@media (max-width: 1180px) {
+  .st_before_after_item {
+    max-width: 90%;
+  }
+  .st_before-after_title {
+    padding-left: 20px;
+    font-size: 28px;
+  }
+}
+@media (max-width: 980px) {
+  .st_before-after_wrapper {
+    display: none;
+  }
+}

@@ -1,0 +1,175 @@
+.st_how-it-works {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.st_hiw_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.st_hiw_title {
+  font-family: 'Roboto Flex';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 110%; /* 39.6px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-left: 250px;
+  margin-bottom: 70px;
+}
+
+.pink_accent {
+  color: #e87594;
+}
+.st_hiw_steps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+.st_hiw_step {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 20px;
+}
+.st_hiw_step_number {
+  color: #0d0f15;
+
+  font-family: 'Roboto Flex';
+  font-size: 336px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 100%; /* 369.6px */
+
+  text-transform: uppercase;
+}
+.st_hiw_step_texts_wrapper {
+  width: 50%;
+  border-radius: 24px;
+  background: #0d0f15;
+  padding: 26px 125px;
+  height: 238px;
+}
+.st_hiw_step_texts_title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 120%; /* 28.8px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+.st_hiw_step_texts_text {
+  color: var(--Primary-Beige, #f7f3eb);
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 420px;
+}
+.step-two {
+  justify-content: flex-start;
+}
+.st_move_a_bit {
+  letter-spacing: -20px;
+}
+.st_second-text {
+  max-width: 480px;
+}
+.img_container {
+  position: relative;
+  height: 242px;
+  width: 270px;
+  overflow: hidden;
+}
+.image_in_omg_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  opacity: 1;
+  transition: all 0.8s;
+}
+.image_in_omg_container_hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.st_hiw_step:hover .image_in_omg_container {
+  opacity: 0;
+  transition: all 0.8s;
+}
+.st_hiw_step:hover .image_in_omg_container_hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+@media (max-width: 1500px) {
+  .st_hiw_steps {
+    justify-content: center;
+  }
+  .st_hiw_step {
+    justify-content: center;
+  }
+  .st_hiw_step_texts_wrapper {
+    padding: 20px;
+  }
+}
+@media (max-width: 980px) {
+  .step-two {
+    flex-direction: row-reverse;
+  }
+  .st_hiw_step {
+    gap: 0;
+    align-items: flex-start;
+  }
+  .image_in_omg_container,
+  .image_in_omg_container_hover,
+  .img_container {
+    min-width: 85px;
+    min-height: 100px;
+    width: 85px;
+    height: 100px;
+  }
+  .img_container {
+    position: relative;
+    top: -15px;
+    z-index: -1;
+    left: 15px;
+  }
+  .st_hiw_step_texts_wrapper {
+    background: none;
+  }
+  .st_hiw_title {
+    padding-left: 20px;
+  }
+  .st_hiw_step_texts_wrapper {
+    width: auto;
+    padding: 0;
+  }
+  .st_how-it-works {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .st_hiw_step_texts_wrapper {
+    height: auto;
+  }
+  .st_hiw_step_texts_text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .st_hiw_step_texts_title {
+    margin-bottom: 12px;
+  }
+  .st_hiw_title {
+    display: none;
+  }
+  .st_how-it-works {
+    padding-top: 80px;
+  }
+}
