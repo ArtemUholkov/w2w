@@ -9,40 +9,77 @@
   position: relative;
   z-index: 2;
 }
-.gradient-left {
+.gradient5 {
   position: absolute;
-  top: 50%; /* Center vertically */
-  left: 0; /* Align to the left */
-  width: 300px; /* Diameter of the circle */
-  height: 300px;
+  top: 50%;
+  left: 10%;
+  width: 400px;
+  height: 400px;
   background: radial-gradient(circle, rgba(52, 180, 244, 1) 0%, rgba(52, 180, 244, 0) 70%);
-  transform: translate(-50%, -50%); /* Center the circle */
-  opacity: 0;
-  animation: fadeInOutsec 3s infinite;
-  z-index: 5;
+  filter: blur(200px) brightness(1.1); /* Increased blur and brightness */
+  transform: translate(-95%, -50%);
+  z-index: 1;
+  animation: glow5 3s infinite alternate;
 }
 
-/* Animation */
-@keyframes fadeInOutsec {
+/* Gradient 2 */
+.gradient6 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(232, 117, 148, 1) 0%, rgba(232, 117, 148, 0) 70%);
+  filter: blur(150px) brightness(1.1); /* Increased blur and brightness */
+  transform: translate(-60%, -50%);
+  z-index: 2;
+  animation: glow6 3s infinite alternate-reverse;
+}
+
+/* Animations with synchronized and independent moves */
+@keyframes glow5 {
   0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) translateY(-100px); /* Start position: moved up */
+    opacity: 0.8; /* Increased opacity */
+    transform: translate(-60%, -50%) scale(1);
   }
   25% {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateY(0px); /* Move to original position */
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% + 100px), calc(-50% + 50px)) scale(1.05);
   }
   50% {
-    opacity: 0;
-    transform: translate(-50%, -50%) translateY(100px); /* Move down */
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% - 100px), calc(-50% + 100px)) scale(1.1);
   }
   75% {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateY(0px); /* Return to original position */
+    opacity: 0.9; /* Slight fade */
+    transform: translate(calc(-60% - 50px), calc(-50% - 100px)) scale(1.05);
   }
   100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) translateY(-100px); /* End position: moved up */
+    opacity: 0.8; /* Return to initial glow */
+    transform: translate(calc(-60% + 100px), calc(-50% - 50px)) scale(1.1);
+  }
+}
+
+@keyframes glow6 {
+  0% {
+    opacity: 0.8; /* Increased opacity */
+    transform: translate(-60%, -50%) rotate(0deg) scale(1);
+  }
+  25% {
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% + 100px), calc(-50% + 50px)) rotate(0deg) scale(1.05);
+  }
+  50% {
+    opacity: 1; /* Peak brightness */
+    transform: translate(calc(-60% - 100px), calc(-50% + 100px)) rotate(0deg) scale(1.1);
+  }
+  75% {
+    opacity: 0.9; /* Slight fade */
+    transform: translate(calc(-60% + 50px), calc(-50% - 50px)) rotate(0deg) scale(1.05);
+  }
+  100% {
+    opacity: 0.8; /* Return to initial glow */
+    transform: translate(calc(-60% - 50px), calc(-50% + 50px)) rotate(0deg) scale(1.1);
   }
 }
 .st_texts_wrapper {
