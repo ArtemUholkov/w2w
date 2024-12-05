@@ -1,0 +1,112 @@
+.cta-title {
+  padding-left: 250px;
+  padding-right: 250px;
+  width: 100%;
+}
+.cta_title_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.cta_title_uptitle {
+  color: #fff;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 36px;
+  font-weight: 1000;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.cta_title_title {
+  color: #34b4f4;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 72px;
+  font-weight: 1000;
+  line-height: 110%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+.cta_title_texts-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.cta_title_texts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cta_title_text {
+  color: var(--white, #fff);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 150%;
+  max-width: 880px;
+}
+.cta-title-button {
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 40px;
+  background: #34b4f4;
+  color: #26355e;
+
+  font-family: 'Roboto Flex';
+  font-size: 12px;
+  font-weight: 1000;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.cta-title-button:hover {
+  background: #95d8f9;
+  gap: 12px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.st_cons_submit_arrow-icon {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 1720px) {
+  .cta-title {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media (max-width: 1520px) {
+  .cta-title {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .cta-title {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .cta_title_texts-button {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .cta-title-button {
+    width: 279px;
+    align-self: center;
+  }
+}
+@media (max-width: 1000px) {
+  .cta_title_uptitle {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+  .cta_title_title {
+    margin-bottom: 24px;
+    font-size: 28px;
+  }
+}
