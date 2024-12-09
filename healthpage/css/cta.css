@@ -1,0 +1,237 @@
+.cta {
+  position: relative !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  width: 100% !important;
+}
+.cta_wrapper {
+  position: relative !important;
+  max-width: 1420px !important;
+  width: 1420px !important;
+
+  margin: 0 auto !important;
+  border-radius: 24px !important;
+  background: var(--white, #fff) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 40px !important;
+}
+.cta_title {
+  color: #26355e !important;
+  font-family: Roboto, sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 900 !important;
+  line-height: 140% !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  max-width: 723px !important;
+  margin: 0 !important;
+  margin-bottom: 29px !important;
+  font-variation-settings: 'wdth' 114, 'XTRA' 600, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 530, 'YTUC' 690,
+    'YTAS' 740, 'YTDE' -180, 'YTFI' 738 !important;
+}
+
+.cta_button {
+  z-index: 102 !important;
+  display: flex !important;
+  padding: 14px 20px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 4px !important;
+  align-self: flex-end !important;
+  border-radius: 40px !important;
+  background: var(--Brand-color, #34b4f4) !important;
+  text-decoration: none !important;
+  transition: all 0.3s !important;
+}
+.cta_button_text {
+  font-family: Roboto, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 1000 !important;
+  line-height: 120% !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  color: #26355e !important;
+  font-variation-settings: 'wdth' 114, 'XTRA' 600, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 530, 'YTUC' 690,
+    'YTAS' 740, 'YTDE' -180, 'YTFI' 738 !important;
+}
+.cta_button svg {
+  position: relative !important;
+  left: 0 !important;
+}
+.cta_button:hover {
+  gap: 12px !important;
+  background: #95d8f9 !important;
+  transition: all 0.3s !important;
+}
+.cta_wrapper {
+  position: relative !important; /* Already present, ensures the gradient stays within this container */
+  max-width: 1420px !important;
+  width: 100% !important;
+  width: 1420px !important;
+  margin: 0 auto !important;
+  border-radius: 24px !important;
+  background: var(--white, #fff) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 40px !important;
+  overflow: hidden !important; /* Ensure the gradient doesn't overflow the wrapper */
+}
+
+.gradientt1 {
+  position: absolute !important;
+  bottom: -300px !important; /* Start at the bottom of the .cta_wrapper */
+  left: 400px !important; /* Start from the left */
+  width: 500px !important; /* Wider gradient */
+  height: 500px !important;
+  background: radial-gradient(circle, #34b4f4 0%, transparent 70%) !important;
+  opacity: 0.7 !important;
+  filter: blur(100px) !important; /* Increase blur for a softer look */
+  animation: moveGradientBottomt 7s ease-in-out infinite alternate !important; /* Slower animation */
+}
+
+@keyframes moveGradientBottomt {
+  0% {
+    transform: translate(0, 0); /* Bottom-left corner */
+  }
+  25% {
+    transform: translate(50px, -100px); /* Slightly up and to the right */
+  }
+  50% {
+    transform: translate(150px, 20px); /* Move diagonally towards the center */
+  }
+  75% {
+    transform: translate(-100px, 40px); /* Shift left and up a bit */
+  }
+  100% {
+    transform: translate(-50px, 0); /* Bottom-right corner */
+  }
+}
+.gradient2t {
+  position: absolute !important;
+  bottom: -200px !important;
+  left: 100px !important; /* Start near the first gradient */
+  width: 400px !important; /* Slightly smaller than gradient1 */
+  height: 400px !important;
+  background: radial-gradient(circle, rgba(255, 0, 184, 0.5) 0%, transparent 70%) !important;
+  opacity: 0; /* Start fully invisible */
+  filter: blur(80px) !important;
+  animation: moveGradient2t 7s ease-in-out infinite alternate, fadeGradientt 7s infinite !important; /* Two animations */
+}
+
+@keyframes moveGradient2t {
+  0% {
+    transform: translate(50px, 20px); /* Close to gradient1 */
+  }
+  50% {
+    transform: translate(120px, 40px); /* Slight movement away */
+  }
+  100% {
+    transform: translate(80px, 0px); /* Back near gradient1 */
+  }
+}
+
+@keyframes fadeGradientt {
+  0%,
+  40% {
+    opacity: 0; /* Invisible initially */
+  }
+  50%,
+  90% {
+    opacity: 0.5; /* Fully visible for most of the time */
+  }
+  100% {
+    opacity: 0; /* Gradually fade out at the end */
+  }
+}
+.gradient3t {
+  position: absolute !important;
+  bottom: 0 !important; /* Positioned at the bottom */
+  right: 0 !important; /* Aligned to the right side */
+  width: 400px !important;
+  height: 400px !important;
+  background: radial-gradient(circle, rgba(255, 0, 184, 0.5) 0%, transparent 70%) !important;
+  opacity: 0; /* Start fully invisible */
+  filter: blur(80px) !important;
+  animation: moveGradient3t 9s ease-in-out infinite alternate, fadeGradient3t 9s infinite; /* Two animations */
+}
+
+@keyframes fadeGradient3t {
+  0%,
+  20% {
+    opacity: 0; /* Start invisible */
+  }
+  30% {
+    opacity: 0.25; /* Begin to fade in */
+  }
+  40%,
+  85% {
+    opacity: 0.5; /* Fully visible for a longer period */
+  }
+  95% {
+    opacity: 0.25; /* Begin to fade out */
+  }
+  100% {
+    opacity: 0; /* Fully faded out */
+  }
+}
+@keyframes moveGradient3t {
+  0% {
+    transform: translate(0, 0); /* Start at the bottom-right corner */
+  }
+  25% {
+    transform: translate(-50px, -20px); /* Move slightly up and left */
+  }
+  50% {
+    transform: translate(-100px, 40px); /* Move diagonally closer to the center */
+  }
+  75% {
+    transform: translate(-70px, -10px); /* Move back closer to the bottom-right corner */
+  }
+  100% {
+    transform: translate(0, 0); /* Return to the original position */
+  }
+}
+@media (max-width: 1550px) {
+  .cta_wrapper {
+    width: 1000px !important;
+  }
+}
+@media (max-width: 1150px) {
+  .cta_wrapper {
+    width: 600px !important;
+  }
+}
+@media (max-width: 850px) {
+  .cta_title {
+    font-size: 24px !important;
+    max-width: 291px !important;
+    margin-bottom: 64px !important;
+  }
+  .cta_button {
+    width: 279px !important;
+    align-self: center !important;
+  }
+  .gradient3 {
+    display: none !important;
+  }
+  .gradient1 {
+    top: 0 !important;
+    right: 100px !important;
+    height: 300px !important;
+    width: 300px !important;
+  }
+  .gradient2 {
+    bottom: -100px !important;
+    left: 0 !important;
+  }
+}
+@media (max-width: 730px) {
+  .cta_wrapper {
+    width: 327px !important;
+    padding: 32px 18px !important;
+  }
+}

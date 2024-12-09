@@ -1,0 +1,128 @@
+.get_started {
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 200px;
+}
+.get_wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+.get_title {
+  color: #34b4f4;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 36px;
+  font-weight: 1000;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+.get_items_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+}
+.get_item {
+  padding: 30px;
+  min-width: 461px;
+  width: 33%;
+  height: 571px;
+  border-radius: 24px;
+  background: #0d0f15;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.get_item_number {
+  color: #fff;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 72px;
+  font-weight: 1000;
+  line-height: 110%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.get_item_title {
+  color: #34b4f4;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 24px;
+  font-weight: 1000;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.get_item_text {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 17px;
+}
+.get_item_img {
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+.get_scroll {
+  display: none;
+}
+@media (max-width: 1700px) {
+  .get_started {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 200px;
+  }
+}
+@media (max-width: 1500px) {
+  .get_started {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 200px;
+  }
+  .get_items_wrapper {
+    overflow: auto;
+    justify-content: flex-start;
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
+  }
+
+  .get_items_wrapper::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in Webkit browsers (Chrome, Safari) */
+  }
+}
+
+@media (max-width: 1300px) {
+  .get_started {
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 200px;
+  }
+  .get_scroll {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 800px) {
+  .get_started {
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 100px;
+  }
+  .get_title {
+    margin-bottom: 32px;
+    font-size: 28px;
+  }
+  .get_item {
+    min-width: 327px;
+    padding: 24px;
+    height: 580px;
+  }
+}

@@ -1,0 +1,203 @@
+.testi {
+  padding-top: 200px;
+
+  padding-left: 250px;
+  padding-right: 250px;
+}
+.testi_wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.testi_title {
+  color: #34b4f4;
+  font-family: 'Roboto Flex';
+  font-size: 36px;
+  font-weight: 1000;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  max-width: 1054px;
+  margin-bottom: 96px;
+}
+.testi_items_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 84px;
+}
+.testi_item {
+  width: 277px;
+  height: 368px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 24px;
+  border: 1px solid #34b4f4;
+  background: #0d0f15;
+  padding: 37px 22px;
+  position: relative;
+  transition: all 0.3s;
+  top: 0;
+}
+.testi_item:nth-of-type(odd) {
+  transform: rotate(-4deg);
+}
+.testi_item:nth-of-type(even) {
+  transform: rotate(4deg);
+}
+.testi-img {
+  width: 277px;
+  height: 368px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 99;
+}
+.testi_item:nth-of-type(odd):hover .testi-img {
+  opacity: 1;
+  transition: all 0.3s;
+  top: -60px;
+  transform: rotate(-12deg);
+}
+.testi_item:nth-of-type(odd):hover {
+  top: 20px;
+  transform: rotate(4deg);
+  transition: all 0.3s;
+}
+.testi_item:nth-of-type(even):hover .testi-img {
+  opacity: 1;
+  transition: all 0.3s;
+  top: -60px;
+  transform: rotate(-12deg);
+}
+.testi_item:nth-of-type(even):hover {
+  top: 20px;
+  transform: rotate(8deg);
+  transition: all 0.3s;
+}
+.testi_item_title {
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto Flex';
+  font-size: 24px;
+  font-weight: 1000;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.testi_item_stars_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5px;
+  margin-bottom: 24px;
+}
+.testi_item_star {
+  width: 23px;
+  height: 22px;
+}
+.testi_item_text {
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+.testi-scroll-img {
+  display: none;
+}
+@media (max-width: 1870px) {
+  .testi {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media (max-width: 1670px) {
+  .testi {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1470px) {
+  .testi {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  .testi_items_wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
+  }
+
+  .testi_items_wrapper::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in Webkit browsers (Chrome, Safari) */
+  }
+  .testi_item {
+    transform: rotate(0);
+  }
+  .testi_item:nth-of-type(odd) {
+    transform: rotate(0deg);
+  }
+  .testi_item:nth-of-type(even) {
+    transform: rotate(0deg);
+  }
+  .testi_items_wrapper {
+    gap: 50px;
+  }
+}
+@media (max-width: 1470px) {
+  .testi_items_wrapper {
+    gap: 20px;
+  }
+}
+@media (max-width: 1230px) {
+  .testi_items_wrapper {
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  .testi_item {
+    width: 277px;
+    min-width: 277px;
+    height: 368.152px;
+  }
+  .testi_item:nth-of-type(odd):hover .testi-img {
+    opacity: 0;
+    transition: all 0.3s;
+    top: 0;
+    transform: rotate(0deg);
+  }
+  .testi_item:nth-of-type(odd):hover {
+    top: 0;
+    transform: rotate(0deg);
+    transition: all 0.3s;
+  }
+  .testi_item:nth-of-type(even):hover .testi-img {
+    opacity: 0;
+    transition: all 0.3s;
+    top: 00;
+    transform: rotate(0deg);
+  }
+  .testi_item:nth-of-type(even):hover {
+    top: 0;
+    transform: rotate(0deg);
+    transition: all 0.3s;
+  }
+  .testi_title {
+    font-size: 28px;
+    max-width: 327px;
+    margin-bottom: 32px;
+  }
+  .testi-scroll-img {
+    display: block;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-top: 24px;
+  }
+}
