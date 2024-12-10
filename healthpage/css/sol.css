@@ -1,6 +1,4 @@
 .sol {
-  padding-left: 250px;
-  padding-right: 250px;
   padding-top: 200px;
 }
 .sol_wrapper {
@@ -12,7 +10,7 @@
   gap: 24px;
 }
 .sol_left_part {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -44,8 +42,8 @@
 }
 .sol svg {
   margin-bottom: 24px;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
 }
 .sol-card-title {
   color: var(--Primary-Beige, #f7f3eb);
@@ -83,12 +81,13 @@
   top: -220px;
 }
 .sol_right_part {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 .sol-right-card {
+  width: 699px;
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -98,4 +97,145 @@
 .sol-r-wrapper {
 }
 .sol-right-img {
+}
+.sol-title {
+  color: #34b4f4;
+  max-width: 550px;
+  font-family: 'Roboto Flex';
+  font-size: 36px;
+  font-weight: 1000;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+.sol-title2 {
+  color: #e87594;
+  font-family: 'Roboto Flex';
+  font-size: 36px;
+  font-weight: 1000;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  max-width: 550px;
+  margin-bottom: 16px;
+}
+.sol-scroll {
+  display: none;
+}
+.sol-card-title-mob {
+  display: none;
+}
+.wrapthingup {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 1550px) {
+  .sol_wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 788px) {
+  .sol_wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sol-left-img {
+    display: none;
+  }
+  .sol-right-img {
+    display: none;
+  }
+  .sol_right_part {
+    flex-direction: column;
+    overflow: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 20px;
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
+  }
+
+  .sol_right_part::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in Webkit browsers (Chrome, Safari) */
+  }
+  .sol-right-card {
+    width: 276px;
+    min-width: 276px;
+    height: 245px;
+    padding: 22px;
+  }
+  .wrap-icon-title {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .sol-card-title-mob {
+    display: block;
+    color: var(--white, #fff);
+    font-family: 'Roboto Flex';
+    font-size: 20px;
+    font-weight: 1000;
+    line-height: 140%; /* 28px */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .sol-card-title {
+    display: none;
+  }
+  .sol-left-left-cards {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sol-left-card-l-t,
+  .sol-left-card-l-b,
+  .sol-left-right-card {
+    width: 276px;
+    height: 245px;
+    padding: 22px;
+  }
+  .sol {
+    padding-bottom: 100px;
+  }
+  .sol-left-cards {
+    /* overflow: auto; */
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .sol-scroll {
+    display: block;
+    margin-left: auto;
+  }
+  .sscolr {
+    margin-right: 26px;
+    margin-top: 24px;
+  }
+  .sol_left_part {
+    overflow: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 26px;
+    padding-right: 26px;
+    scrollbar-width: none; /* Hides the scrollbar in Firefox */
+    margin-bottom: 100px;
+  }
+  .wrapthingup {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    margin-right: 20px;
+  }
+  .sol_left_part::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar in Webkit browsers (Chrome, Safari) */
+  }
+
+  .sol_wrapper {
+    overflow: hidden;
+    display: block;
+  }
 }
