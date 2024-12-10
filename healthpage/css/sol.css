@@ -132,7 +132,7 @@
   flex-direction: column;
   gap: 24px;
 }
-@media (max-width: 1550px) {
+@media (max-width: 1460px) {
   .sol_wrapper {
     flex-direction: column-reverse;
     align-items: center;
