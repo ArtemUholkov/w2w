@@ -300,7 +300,7 @@
     }
 
     .service-section {
-        margin: 100px 24px;
+        margin: 100px 0;
     }
 }
 
@@ -380,6 +380,10 @@
         transition: none;
         position: relative;
         top: 0px;
+    }
+
+    .service-section {
+        padding: 0 24px;
     }
 }
 
