@@ -1,0 +1,83 @@
+.banner-section {
+    position: relative;
+    display: flex;
+    height: 467px;
+    width: 100%;
+    overflow: hidden;
+    margin: 200px auto;
+}
+
+.banner-section__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 467px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.banner-section__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 24px;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.banner-section__title {
+    color: #34B4F4;
+    font-family: "Roboto Flex";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 140%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    width: 100%;
+    text-align: left;
+}
+
+.banner-section__subtitle {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 983px;
+    text-align: left;
+}
+
+@media (max-width: 1600px) {
+    .banner-section__text-container {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .banner-section__text-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner-section__title {
+        font-size: 28px;
+    }
+
+    .banner-section {
+        margin: 100px auto;
+    }
+
+    .banner-section__subtitle {
+        font-size: 16px;
+    }
+}
