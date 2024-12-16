@@ -68,7 +68,7 @@
     visibility: visible; 
 }
 
-@media (max-width: 1660px) {
+@media (max-width: 1500px) {
     .slider-section {
         margin: 0 200px 200px;
         justify-content: center;
@@ -84,6 +84,10 @@
     .slider-section__container,
     .slider-section__form {
         margin: 0 auto; 
+    }
+
+    .slider-section__container {
+        display: none;
     }
 }
 

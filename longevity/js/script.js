@@ -36,9 +36,9 @@ document.addEventListener("scroll", () => {
         container.style.opacity = `1`;
     }
 
-    const translateXLeft = progress * -150; 
-    const translateXRight = progress * 150; 
-    const opacity = 1 - progress; 
+    const translateXLeft = progress * -150;
+    const translateXRight = progress * 150;
+    const opacity = 1 - progress;
 
     imageLeft.style.transform = `translateX(${translateXLeft}%)`;
     imageLeft.style.opacity = `${opacity}`;
@@ -55,13 +55,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (scrollButton && scrollContainer) {
         scrollButton.addEventListener('click', () => {
-            scrollContainer.scrollBy({
-                left: 340,
-                behavior: 'smooth',
-            });
+            const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+            const currentScrollLeft = scrollContainer.scrollLeft;
+            if (Math.ceil(currentScrollLeft) >= maxScrollLeft - 1) {
+                scrollContainer.scrollTo({
+                    left: 0,
+                    behavior: 'smooth',
+                });
+            } else {
+                scrollContainer.scrollBy({
+                    left: 340,
+                    behavior: 'smooth',
+                });
+            }
         });
     }
 });
+
 
 
 // Review section scroll button
@@ -71,13 +81,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (scrollButton && scrollContainer) {
         scrollButton.addEventListener('click', () => {
-            scrollContainer.scrollBy({
-                left: 340,
-                behavior: 'smooth',
-            });
+            const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+            if (Math.ceil(scrollContainer.scrollLeft) >= maxScrollLeft) {
+                scrollContainer.scrollTo({
+                    left: 0,
+                    behavior: 'smooth',
+                });
+            } else {
+                scrollContainer.scrollBy({
+                    left: 340,
+                    behavior: 'smooth',
+                });
+            }
         });
     }
 });
+
 
 //FAQ section 
 document.addEventListener('DOMContentLoaded', () => {
@@ -108,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const imagesDesktop = document.querySelectorAll(".slider-section__image");
     const imagesMobile = document.querySelectorAll(".slider-section__image-mob");
     let currentIndex = 0;
-    const intervalTime = 3000; 
+    const intervalTime = 3000;
 
     const updateSlider = () => {
         const isMobileView = window.innerWidth <= 500;
@@ -134,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateSlider, intervalTime);
 
     window.addEventListener("resize", () => {
-        currentIndex = 0; 
+        currentIndex = 0;
         updateSlider();
     });
 });
