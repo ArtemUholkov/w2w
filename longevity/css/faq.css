@@ -141,7 +141,7 @@
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
     letter-spacing: 0.2px;
     transition: all 0.9s;
@@ -180,7 +180,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
     .faq-section {
         margin: 0 50px 200px;
     }
