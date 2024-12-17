@@ -4,6 +4,7 @@
     align-items: center;
     margin: 0 250px 200px;
     max-width: 1600px;
+    position: relative;
 }
 
 .faq-section__grid {
@@ -151,6 +152,34 @@
 .faq-section__item-container.active .faq-section__item-hidden {
     max-height: 500px; 
     opacity: 1;
+}
+
+.moving-light {
+    position: absolute;
+    top: 0%; 
+    left: 10%; 
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #34B4F4 0%, rgba(232, 117, 148, 0) 70%);
+    filter: blur(150px) brightness(1.1);
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: light 6s infinite alternate-reverse;
+}
+
+@keyframes light {
+    0% {
+        opacity: 0.8;
+        transform: translateX(-50%) translateY(0); 
+    }
+    50% {
+        opacity: 1; 
+        transform: translateX(-50%) translateY(50vh); 
+    }
+    100% {
+        opacity: 0.8;
+        transform: translateX(-50%) translateY(0); 
+    }
 }
 
 @media (max-width: 1860px) {

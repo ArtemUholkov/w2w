@@ -40,7 +40,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 24px;
-    width: 100%;
+    width: 70%;
     text-align: left;
 }
 
@@ -51,7 +51,7 @@
     font-style: normal;
     font-weight: 300;
     line-height: 150%;
-    max-width: 983px;
+    max-width: 945px;
     text-align: left;
 }
 
@@ -71,6 +71,7 @@
 @media (max-width: 500px) {
     .banner-section__title {
         font-size: 28px;
+        width: 100%;
     }
 
     .banner-section {
@@ -78,6 +79,6 @@
     }
 
     .banner-section__subtitle {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
