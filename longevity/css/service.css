@@ -313,7 +313,7 @@
         display: flex;
         width: 327px;
         height: 480px;
-        padding: 14px 14px 50px 14px;
+        /* padding: 14px 14px 50px 14px; */
         flex-direction: column;
         align-items: center;
         gap: 25px;
@@ -348,6 +348,10 @@
 
     .service-section__content-image-container {
         left: 15px;
+    }
+
+    .service-section__content-image {
+        width: 290px;
     }
 
     .service-section__content-item:hover .service-section__content-image-container {
