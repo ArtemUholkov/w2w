@@ -1,0 +1,111 @@
+.main {
+  width: 100svw;
+  height: auto;
+}
+.main_bgimg {
+  width: 100svw;
+  height: auto;
+}
+.main_texts-button_wrapper {
+  padding-left: 250px;
+  padding-right: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_texts_texts {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.main_texts_texts_title {
+  color: #34b4f4;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 36px;
+  font-weight: 1000;
+  line-height: 140%; /* 50.4px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.main_texts_texts_text {
+  color: var(--white, #fff);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 705px;
+}
+.main_texts_button {
+  color: #26355e;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 12px;
+  font-weight: 1000;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 14px 20px;
+  gap: 4px;
+  align-self: flex-end;
+  border-radius: 40px;
+  background: #34b4f4;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.main_texts_button:hover {
+  gap: 12px;
+  background: #95d8f9;
+  transition: all 0.3s;
+}
+.mob-img {
+  display: none;
+}
+@media (max-width: 1760px) {
+  .main_texts-button_wrapper {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+@media (max-width: 1560px) {
+  .main_texts-button_wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1110px) {
+  .main_texts-button_wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .main_texts-button_wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .main_texts_button {
+    align-self: center;
+  }
+  .desk-img {
+    display: none;
+  }
+  .mob-img {
+    display: block;
+    padding-top: 58px;
+  }
+  .main_texts_texts_title {
+    font-size: 28px;
+  }
+  .main_texts_texts {
+    gap: 24px;
+  }
+  .main_texts_button {
+    width: 279px;
+  }
+}

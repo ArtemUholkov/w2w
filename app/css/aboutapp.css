@@ -1,0 +1,145 @@
+.aboutapp {
+  padding-top: 170px;
+  padding-bottom: 165px;
+}
+.aboutapp_wrapper {
+  padding-left: 47px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 124px;
+}
+.aboutapp_image {
+  max-width: 722px;
+  width: 100%;
+  height: auto;
+}
+.aboutapp_content {
+  display: flex;
+  flex-direction: column;
+}
+.about-app_title {
+  color: #34b4f4;
+  font-family: 'Roboto Flex';
+  font-size: 36px;
+  font-weight: 1000;
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+.about-app_text {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 32px;
+  max-width: 579px;
+}
+.about-app_items_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.about-app_item {
+  display: flex;
+  gap: 8px;
+  height: 217px;
+  padding: 30.04px;
+  position: relative;
+  max-width: 377px;
+}
+.about-app_item_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 217px;
+  width: 100%;
+  z-index: -1;
+}
+.about-app-item_texts {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.about-app-item-title {
+  color: #26355e;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 24.032px;
+  font-weight: 1000;
+  line-height: 130%; /* 31.241px */
+  letter-spacing: 1.001px;
+  text-transform: uppercase;
+}
+.about-app-item-text {
+  color: #0d0f15;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20.026px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.about-app_item svg {
+  min-width: 23px;
+  min-height: 18px;
+  margin-top: 5px;
+}
+
+@media (max-width: 1740px) {
+  .aboutapp_wrapper {
+    gap: 40px;
+  }
+  .aboutapp_wrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 1600px) {
+  .aboutapp_image {
+    max-width: 600px;
+  }
+  .aboutapp_wrapper {
+    gap: 0;
+  }
+}
+@media (max-width: 1430px) {
+  .aboutapp_wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  .about-app_items_wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 860px) {
+  .aboutapp {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .about-app_title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .about-app_item {
+    width: 327px;
+    height: 217px;
+    padding: 20px;
+  }
+  .about-app-item-title {
+    font-size: 24px;
+  }
+  .about-app-item-text {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-app-item_texts {
+    justify-content: flex-start;
+  }
+}
