@@ -319,9 +319,9 @@
         gap: 25px;
     }
 
-    .extra-padding {
+    /* .extra-padding {
         padding: 14px 14px 30px 14px !important;
-    }
+    } */
 
     .service-section__content-item:hover .service-section__content-image-container {
         height: 480px;
