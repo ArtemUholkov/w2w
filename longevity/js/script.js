@@ -13,7 +13,7 @@ document.addEventListener("scroll", () => {
     const progress = Math.min(scrollY / sectionHeight, 1);
     const isSmallScreen = window.innerWidth < 450;
 
-    const scale = isSmallScreen ? 1 + progress * 2.5 : 1 + progress * 1;
+    const scale = isSmallScreen ? 1 + progress * 0.5 : 1 + progress * 1;
     const translateX = isSmallScreen ? 0 : progress * -30;
 
     if (isSmallScreen) {
@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
 
 
 // Review section scroll button
