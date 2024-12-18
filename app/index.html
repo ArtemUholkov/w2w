@@ -16,8 +16,18 @@
     <link rel="stylesheet" href="css/about-main.css" />
     <link rel="stylesheet" href="css/aboutapp.css" />
     <link rel="stylesheet" href="css/em.css" />
+    <link rel="stylesheet" href="css/modal.css" />
   </head>
   <body>
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <video controls>
+          <source src="video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
     <section class="main">
       <img src="img/main/image.png" alt="bgimage" class="main_bgimg desk-img" />
       <img src="img/main/image-mob.png" alt="bgimage" class="main_bgimg mob-img" />
@@ -25,14 +35,14 @@
         <p class="main-title">Coming Soon</p>
         <p class="main-subtitle">Ways2Well AI-Based Care App</p>
         <img src="img/main/abapp.png" alt="phones image" class="main-img" />
-        <img src="img/main/play.png" alt="play icon" class="play-icon" />
+        <img src="img/main/play.png" alt="play icon" class="play-icon open-modal" id="openModal" />
       </div>
 
       <div class="main_texts-button_wrapper">
         <div class="main_texts_texts">
           <div class="img-for-mob-add">
             <img src="img/main/abapp.png" alt="img mob" class="img-mob-phones" />
-            <img src="img/main/play.png" alt="play icon" class="play-icon-mob" />
+            <img src="img/main/play.png" alt="play icon " class="play-icon-mob open-modal" />
           </div>
           <p class="main_texts_texts_title">The Ways2Well mobile app</p>
           <p class="main_texts_texts_text">
@@ -201,5 +211,6 @@
         </form>
       </em>
     </section>
+    <script src="js/index.js"></script>
   </body>
 </html>
