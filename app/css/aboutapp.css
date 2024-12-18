@@ -3,10 +3,10 @@
   padding-bottom: 165px;
 }
 .aboutapp_wrapper {
-  padding-left: 47px;
+  padding-left: 250px;
 
   display: flex;
-  align-items: center;
+
   justify-content: center;
   gap: 124px;
 }
@@ -28,6 +28,8 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 42px;
+  max-width: 425px;
+  width: 100%;
 }
 .about-app_text {
   color: #fff;
@@ -92,7 +94,7 @@
     gap: 40px;
   }
   .aboutapp_wrapper {
-    padding-left: 24px;
+    padding-left: 150px;
     padding-right: 24px;
   }
 }
@@ -101,7 +103,7 @@
     max-width: 600px;
   }
   .aboutapp_wrapper {
-    gap: 0;
+    gap: 40px;
   }
 }
 @media (max-width: 1430px) {
@@ -111,6 +113,10 @@
     justify-content: center;
     max-width: 850px;
     margin: 0 auto;
+    padding-left: 50px;
+  }
+  .about-app_title {
+    max-width: initial;
   }
   .about-app_items_wrapper {
     align-items: center;
@@ -119,8 +125,13 @@
 }
 @media (max-width: 860px) {
   .aboutapp {
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 50px;
+  }
+
+  .aboutapp_wrapper {
+    padding-left: 24px;
+    gap: 0;
   }
   .about-app_title {
     font-size: 28px;
