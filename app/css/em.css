@@ -117,3 +117,16 @@
     padding-bottom: 30px;
   }
 }
+.hbspt-form {
+  width: 500px; /* Set desired width */
+  margin: 0 auto; /* Center the form */
+}
+.hs-button {
+  margin: 0 auto;
+}
+@media (max-width: 650px) {
+  .hbspt-form {
+    width: 310px; /* Set desired width */
+    margin: 0 auto; /* Center the form */
+  }
+}
