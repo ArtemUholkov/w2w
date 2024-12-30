@@ -334,7 +334,7 @@
     }
 
     .service-section__header-title {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .service-section__content-image-container {
@@ -388,6 +388,10 @@
 
     .service-section {
         padding: 0 24px;
+    }
+
+    .service-section__content-title {
+        font-size: 20px;
     }
 }
 
