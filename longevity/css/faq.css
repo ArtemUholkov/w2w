@@ -255,5 +255,7 @@
         border-radius: 8px;
     }
 
-
+    .faq-section__title {
+        font-size: 24px;
+    }
 }
