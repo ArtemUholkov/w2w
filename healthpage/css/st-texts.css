@@ -137,15 +137,15 @@
     gap: 8px;
   }
   .st_texts_title {
-    font-size: 28px;
+    font-size: 24px;
   }
   .st_texts_text {
-    font-size: 17px;
+    font-size: 16px;
   }
   .st_texts_text_subtitle {
-    margin-top: 18px;
+    /* margin-top: 18px; */
   }
   .st_texts_title {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 }

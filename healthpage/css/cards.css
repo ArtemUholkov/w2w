@@ -357,10 +357,11 @@
     max-width: 329px;
   }
   .card_accent_text {
-    font-size: 28px;
+    font-size: 24px;
   }
   .card_nonacent_text {
-    font-size: 28px;
+    font-size: 24px;
+    max-width: 260px;
   }
   .cards_wrapper {
     justify-content: center;

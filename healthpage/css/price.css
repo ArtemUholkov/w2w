@@ -131,6 +131,9 @@
   .bprice_wrapper {
     gap: 24px;
   }
+  .bprice_text-text {
+    font-size: 16px;
+  }
   .bprice_title {
     flex-direction: column-reverse;
   }

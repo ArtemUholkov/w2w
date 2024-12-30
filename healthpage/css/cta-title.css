@@ -107,6 +107,9 @@
   }
   .cta_title_title {
     margin-bottom: 24px;
-    font-size: 28px;
+    font-size: 32px;
+  }
+  .cta_title_text {
+    font-size: 16px;
   }
 }

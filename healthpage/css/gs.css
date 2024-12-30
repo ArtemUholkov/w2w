@@ -111,6 +111,9 @@
   }
 }
 @media (max-width: 800px) {
+  .get_item_text {
+    font-size: 16px;
+  }
   .get_started {
     padding-left: 26px;
     padding-right: 26px;
@@ -118,11 +121,12 @@
   }
   .get_title {
     margin-bottom: 32px;
-    font-size: 28px;
+    font-size: 24px;
+    max-width: 300px;
   }
   .get_item {
     min-width: 327px;
     padding: 24px;
-    height: 580px;
+    height: 540px;
   }
 }
