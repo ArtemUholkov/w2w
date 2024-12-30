@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     padding: 0 24px;
     text-align: center;
     margin-left: 220px;
@@ -40,25 +40,67 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 24px;
-    width: 70%;
+    width: 100%;
+    max-width: 1100px;
     text-align: left;
 }
 
 .banner-section__subtitle {
     color: #FFF;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: 150%;
-    max-width: 950px;
-    width: 80%;
+    max-width: 820px;
+    width: 100%;
     text-align: left;
+}
+
+.banner-section__btn-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 24px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.banner-section__btn {
+    display: flex;
+    padding: 14px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 40px;
+    border: none;
+    background-color: #34B4F4;
+    color: #26355E;
+    font-family: "Roboto Flex";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 120%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    margin-top: 70px;
+}
+
+.banner-section__btn:hover {
+    display: inline-flex;
+    padding: 14px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 40px;
+    background-color: #95D8F9;
 }
 
 @media (max-width: 1600px) {
     .banner-section__text-container {
-        margin-left: 200px;
+        margin-left: 100px;
     }
 }
 
@@ -69,9 +111,21 @@
     }
 }
 
+@media (max-width: 1100px) {
+    .banner-section {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .banner-section__btn {
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 500px) {
     .banner-section__title {
-        font-size: 28px;
+        font-size: 24px;
         width: 100%;
     }
 
@@ -80,6 +134,14 @@
     }
 
     .banner-section__subtitle {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .banner-section__btn {
+        width: 327px;
+    }
+
+    .banner-section__btn-container {
+        max-width: 400px;
     }
 }
