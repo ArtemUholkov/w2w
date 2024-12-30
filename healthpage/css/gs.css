@@ -58,7 +58,7 @@
 .get_item_text {
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -122,11 +122,14 @@
   .get_title {
     margin-bottom: 32px;
     font-size: 24px;
-    max-width: 300px;
+    max-width: 327px;
   }
   .get_item {
     min-width: 327px;
     padding: 24px;
     height: 540px;
+  }
+  .get_item_title {
+    font-size: 20px;
   }
 }

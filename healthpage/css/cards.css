@@ -402,6 +402,7 @@
   }
   .cards_three__card .card-hover-content {
     display: flex;
+    padding-left: 10px;
   }
 }
 @media (max-width: 830px) {
@@ -438,7 +439,7 @@
     font-size: 22px;
   }
   .card-hover_text {
-    font-size: 18px;
+    font-size: 16px;
     max-width: 244px;
   }
   .fst-txt {
