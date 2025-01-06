@@ -18,14 +18,14 @@ document.addEventListener('scroll', () => {
 
   if (isSmallScreen) {
     image.style.transform = `scale(1)`;
-    image.style.opacity = `0`;
+    // image.style.opacity = `0`;
     imageSmall.style.transform = `scale(${scale})`;
-    imageSmall.style.opacity = `1`;
+    // imageSmall.style.opacity = `1`;
   } else {
     image.style.transform = `scale(${scale}) translateX(${translateX}%)`;
-    image.style.opacity = `1`;
+    // image.style.opacity = `1`;
     imageSmall.style.transform = `scale(1)`;
-    imageSmall.style.opacity = `0`;
+    // imageSmall.style.opacity = `0`;
   }
 
   if (!isSmallScreen) {
@@ -38,7 +38,7 @@ document.addEventListener('scroll', () => {
 
   const translateXLeft = progress * -150;
   const translateXRight = progress * 150;
-  const opacity = 1 - progress;
+  const opacity = 1;
 
   imageLeft.style.transform = `translateX(${translateXLeft}%)`;
   imageLeft.style.opacity = `${opacity}`;
