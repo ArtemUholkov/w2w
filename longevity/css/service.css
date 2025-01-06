@@ -325,10 +325,6 @@ sub {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-
-  .service-section__scroll {
-    /* display: flex; */
-  }
 }
 
 @media (max-width: 750px) {
