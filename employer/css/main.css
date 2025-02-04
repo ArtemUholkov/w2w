@@ -157,6 +157,12 @@ p {
   padding-right: 24px;
   padding-bottom: 10px;
   overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.health-cards-list::-webkit-scrollbar {
+  display: none;
 }
 
 .health-cards-list .card-wrapper {
@@ -349,13 +355,17 @@ p {
     flex-shrink: 0;
   }
 
+  .about_list_item .title {
+    font-size: 24px;
+  }
+
   .about_text {
     max-width: 698px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-    .about_list_item .description {
+  .about_list_item .description {
     font-size: 18px;
     line-height: 1.5;
   }
@@ -365,7 +375,12 @@ p {
     overflow: hidden;
   }
 
+  .health-series h2 {
+    margin-bottom: 12px;
+  }
+
   .health-cards-list {
+    margin-top: 42px;
     margin-right: 0;
     padding-right: 0;
     padding-bottom: 24px;
