@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    //Scroll button
     const scrollButton = document.querySelector('.health-series__btn-scroll');
     const scrollContainer = document.querySelector('.health-cards-list');
 
@@ -18,4 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    //Start animation when element in viewport
+    if (window.innerWidth > 1279) {
+        window.addEventListener('scroll', function () {
+            let sectionsList = document.querySelectorAll('.animate');
+            let scrollPosition = window.scrollY;
+
+            sectionsList.forEach(function (el) {
+                let topOffset = el.getBoundingClientRect().top + window.scrollY - 100;
+                let bottomPosition = topOffset + el.offsetHeight;
+
+                if (scrollPosition > topOffset && scrollPosition < bottomPosition) {
+                    el.classList.add('active');
+                }
+            });
+        });
+    };
+
 });

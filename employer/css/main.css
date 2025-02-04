@@ -144,6 +144,10 @@ p {
   border-left: 2px solid rgb(52 180 244);
 }
 
+.health-series {
+  padding-bottom: 100px;
+}
+
 .health-cards-list {
   display: flex;
   gap: 16px;
@@ -228,7 +232,6 @@ p {
 
 .employers-cta {
   position: relative;
-  margin-top: 100px;
   padding-top: 87px;
   padding-bottom: 87px;
   z-index: 1;
@@ -352,9 +355,14 @@ p {
     padding-bottom: 60px;
   }
 
-  .about_list_item .description {
+    .about_list_item .description {
     font-size: 18px;
     line-height: 1.5;
+  }
+
+  .health-series {
+    padding-bottom: 200px;
+    overflow: hidden;
   }
 
   .health-cards-list {
@@ -392,7 +400,6 @@ p {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: rgb(38 53 94);
-    transition-duration: 0.3s;
   }
 
   .health-cards-list .card-preview .card-preview_bg {
@@ -422,7 +429,6 @@ p {
   }
 
   .employers-cta {
-    margin-top: 200px;
     padding-top: 181px;
     padding-bottom: 150px;
   }
@@ -441,6 +447,29 @@ p {
     position: relative;
   }
 
+  .about_list {
+    overflow: hidden;
+  }
+
+  .about_list_item {
+    transform: translateX(100%);
+    opacity: 0;
+    transition-duration: .5s;
+  }
+
+  .about_list_item:nth-child(2) {
+    transition-delay: .5s;
+  }
+
+  .about_list_item:nth-child(3) {
+    transition-delay: 1s;
+  }
+
+  .active .about_list_item {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
   .health-series_decor {
     display: inline-block;
     position: absolute;
@@ -449,5 +478,29 @@ p {
     right: -640px;
     top: 0;
     z-index: -1;
+    animation: decorMoving 8s ease-in-out infinite alternate;
+  }
+
+  @keyframes decorMoving {
+    0% {
+      right: -640px;
+      top: 0;
+    }
+    25% {
+      right: -580px;
+      top: 50px;
+    }
+    50% {
+      right: -560px;
+      top: 25px;
+    }
+    75% {
+      right: -500px;
+      top: 40px;
+    }
+    100% {
+      right: -640px;
+      top: 0;
+    }
   }
 }
