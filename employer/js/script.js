@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let scrollPosition = window.scrollY;
 
             sectionsList.forEach(function (el) {
-                let topOffset = el.getBoundingClientRect().top + window.scrollY - 100;
+                let topOffset = el.getBoundingClientRect().top + window.scrollY - 350;
                 let bottomPosition = topOffset + el.offsetHeight;
 
                 if (scrollPosition > topOffset && scrollPosition < bottomPosition) {

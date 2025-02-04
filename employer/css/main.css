@@ -478,7 +478,7 @@ p {
     right: -640px;
     top: 0;
     z-index: -1;
-    animation: decorMoving 8s ease-in-out infinite alternate;
+    animation: decorMoving 6s ease-in-out infinite alternate;
   }
 
   @keyframes decorMoving {
@@ -486,17 +486,13 @@ p {
       right: -640px;
       top: 0;
     }
-    25% {
-      right: -580px;
-      top: 50px;
+    33% {
+      right: -520px;
+      top: -120px;
     }
-    50% {
-      right: -560px;
-      top: 25px;
-    }
-    75% {
-      right: -500px;
-      top: 40px;
+    66% {
+      right: -600px;
+      top: -240px;
     }
     100% {
       right: -640px;
