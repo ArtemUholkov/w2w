@@ -1,445 +1,453 @@
 body {
-    background-color: rgb(26 29 41);
-    color: rgb(255 255 255);
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
+  background-color: rgb(26 29 41);
+  color: rgb(255 255 255);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .container {
-    max-width: 1470px;
-    padding-right: 24px;
-    padding-left: 24px;
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 1470px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .section {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    padding: 14px 20px;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 12px;
-    border-radius: 40px;
-    text-decoration: none;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 900;
-    transition-duration: .3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 14px 20px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 12px;
+  border-radius: 40px;
+  text-decoration: none;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition-duration: 0.3s;
 }
 
 .btn-primary {
-    color: rgb(38 53 94);
-    background-color: rgb(52 180 244);
+  color: rgb(38 53 94);
+  background-color: rgb(52 180 244);
 }
 
 .btn-primary:hover {
-    gap: 16px;
-    background-color: rgb(149 216 249);
+  gap: 16px;
+  background-color: rgb(149 216 249);
 }
 
-h1, h2, h3, .title {
-    color: rgb(52 180 244);
-    font-family: "Roboto Flex", sans-serif;
+h1,
+h2,
+h3,
+.title {
+  color: rgb(52 180 244);
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+h2 {
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+
+h3 {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.hero_description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero_img {
+  height: 383px;
+}
+
+.hero_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero_description .btn {
+  width: 100%;
+  max-width: calc(100% - 48px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-img_mobile {
+  margin-bottom: 42px;
+  border-radius: 12px;
+}
+
+.about-img_desktop {
+  display: none;
+}
+
+.about_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about_list_item .title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  font-size: 20px;
+}
+
+.about_list_item .title-ico {
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  background-color: rgb(13 15 21);
+  border-radius: 24px;
+}
+
+.about_list_item .description {
+  margin-left: 40px;
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  border-left: 2px solid rgb(52 180 244);
+}
+
+.health-cards-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  margin-right: -24px;
+  margin-bottom: 2px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  overflow-x: auto;
+}
+
+.health-cards-list .card-wrapper {
+  width: 328px;
+  flex-shrink: 0;
+}
+
+.health-cards-list .card {
+  height: 100%;
+  padding: 20px 24px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.health-cards-list .card-preview {
+  display: none;
+}
+
+.health-cards-list .card-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(13 15 21);
+}
+
+.health-cards-list .card-hover_title {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.health-cards-list .card-hover_ico {
+  width: 24px;
+  height: auto;
+  flex-shrink: 0;
+  padding-top: 3px;
+}
+
+.health-cards-list .card-hover_description {
+  padding-left: 34px;
+}
+
+.health-series__btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.health-series__btn-scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+  padding-right: 0;
+  background-color: transparent;
+  border-width: 0;
+  color: rgb(79 80 88);
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+.health-series_decor {
+  display: none;
+}
+
+.employers-cta {
+  position: relative;
+  margin-top: 100px;
+  padding-top: 87px;
+  padding-bottom: 87px;
+  z-index: 1;
+}
+
+.employers-cta:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.72) 39.58%,
+    rgba(0, 0, 0, 0.54) 84.54%
+  );
+  z-index: -1;
+}
+
+.employers-cta_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.employers-cta_bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .about-img_mobile {
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    max-width: 1200px;
+    font-size: 72px;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    margin-bottom: 26px;
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+
+  .hero {
+    position: relative;
+    padding-top: 574px;
+    padding-bottom: 200px;
+  }
+
+  .hero_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .hero_description {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .hero_description p {
+    max-width: 1080px;
+  }
+
+  .hero_description .btn {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .about-img_mobile {
+    display: none;
+  }
+
+  .about-img_desktop {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .section.about {
+    padding-top: 0;
+    background-color: rgb(13 15 21);
+  }
+
+  .about .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about_img {
+    width: 490px;
+    flex-shrink: 0;
+  }
+
+  .about_text {
+    max-width: 698px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about_list_item .description {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .health-cards-list {
+    margin-right: 0;
+    padding-right: 0;
+    padding-bottom: 24px;
+    justify-content: space-between;
+    overflow: inherit;
+  }
+
+  .health-cards-list .card-wrapper {
+    position: relative;
+    width: calc(100% / 3 - 12px);
+    min-height: 184px;
+  }
+
+  .health-cards-list .card-preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 24px;
+    font-style: normal;
     font-weight: 900;
     line-height: 1.3;
     letter-spacing: 1px;
     text-transform: uppercase;
-}
+    color: rgb(38 53 94);
+    transition-duration: 0.3s;
+  }
 
-h1 {
-    margin-bottom: 24px;
-    font-size: 28px;
-}
-
-h2 {
-    margin-bottom: 32px;
-    font-size: 24px;
-}
-
-h3 {
-    margin-bottom: 24px;
-    font-size: 24px;
-}
-
-p {
-    line-height: 1.5;
-}
-
-.hero_description {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.hero_img {
-    height: 383px;
-}
-
-.hero_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero_description .btn {
-    width: 100%;
-    max-width: calc(100% - 48px);
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.about-img_mobile {
-    margin-bottom: 42px;
-    border-radius: 12px;
-}
-
-.about-img_desktop {
-    display: none;
-}
-
-.about_list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.about_list_item .title {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-bottom: 8px;
-    line-height: 1.4;
-    font-size: 20px;
-}
-
-.about_list_item .title-ico {
-    width: 80px;
-    height: 80px;
-    padding: 15px;
-    background-color: rgb(13 15 21);
-    border-radius: 24px;
-}
-
-.about_list_item .description {
-    margin-left: 40px;
-    padding-left: 40px;
-    font-size: 16px;
-    line-height: 1.4;
-    letter-spacing: 0.2px;
-    border-left: 2px solid rgb(52 180 244);
-}
-
-.health-cards-list {
-    display: flex;
-    gap: 16px;
-    margin-top: 24px;
-    margin-right: -24px;
-    margin-bottom: 2px;
-    padding-right: 24px;
-    padding-bottom: 10px;
-    overflow-x: auto;
-}
-
-.health-cards-list .card-wrapper {
-    width: 328px;
-    flex-shrink: 0;
-}
-
-.health-cards-list .card {
-    height: 100%;
-    padding: 20px 24px;
-    border-radius: 24px;
-    overflow: hidden;
-}
-
-.health-cards-list .card-preview {
-    display: none;
-}
-
-.health-cards-list .card-hover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(13 15 21);
-}
-
-.health-cards-list .card-hover_title {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 8px;
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 1.4;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.health-cards-list .card-hover_ico {
-    width: 24px;
-    height: auto;
-    flex-shrink: 0;
-    padding-top: 3px;
-}
-
-.health-cards-list .card-hover_description {
-    padding-left: 34px;
-}
-
-.health-series__btn-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 24px;
-}
-
-.health-series__btn-scroll {
-    display: inline-flex;
-    align-items: center;
-    gap: 16px;
-    margin-left: auto;
-    padding-right: 0;
-    background-color: transparent;
-    border-width: 0;
-    color: rgb(79 80 88);
-    font-size: 16px;
-    line-height: 1.4;
-    letter-spacing: 0.2px;
-}
-
-.health-series_decor {
-    display: none;
-}
-
-.employers-cta {
-    position: relative;
-    margin-top: 100px;
-    padding-top: 87px;
-    padding-bottom: 87px;
-    z-index: 1;
-}
-
-.employers-cta:after {
-    content: '';
+  .health-cards-list .card-preview .card-preview_bg {
     position: absolute;
-    left: 0;
     top: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.72) 39.58%, rgba(0, 0, 0, 0.54) 84.54%);
-    z-index: -1;
-}
-
-.employers-cta_bg {
-    position: absolute;
     left: 0;
-    top: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
-    object-fit: cover;
-}
+  }
 
-.employers-cta_bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+  .health-cards-list .card-wrapper:hover .card-preview {
+    opacity: 0;
+  }
 
-@media (min-width: 768px) {
-    .about-img_mobile {
-        width: 350px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
+  .health-cards-list .card-hover_title {
+    padding-right: 40px;
+    font-size: 24px;
+  }
 
-@media (min-width: 1024px) {
-    h1 {
-        max-width: 1200px;
-        font-size: 72px;
-        letter-spacing: 2px;
-    }
+  .health-series__description {
+    max-width: 960px;
+  }
 
-    h2 {
-        margin-bottom: 26px;
-        font-size: 40px;
-    }
+  .health-series__btn-wrapper {
+    display: none;
+  }
 
-    h3 {
-        font-size: 36px;
-        line-height: 1.4;
-    }
+  .employers-cta {
+    margin-top: 200px;
+    padding-top: 181px;
+    padding-bottom: 150px;
+  }
 
-    .hero {
-        position: relative;
-        padding-top: 574px;
-        padding-bottom: 200px;
-    }
-
-    .hero_img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-    }
-
-    .hero_description {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    .hero_description p {
-        max-width: 1080px;
-    }
-
-    .hero_description .btn {
-        width: auto;
-        flex-shrink: 0;
-    }
-
-    .about-img_mobile {
-        display: none;
-    }
-
-    .about-img_desktop {
-        display: block;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .section.about {
-        padding-top: 0;
-        background-color: rgb(13 15 21);
-    }
-
-    .about .container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .about_img {
-        width: 490px;
-        flex-shrink: 0;
-    }
-
-    .about_text {
-        max-width: 698px;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .about_list_item .description {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-
-    .health-cards-list {
-        margin-right: 0;
-        padding-right: 0;
-        padding-bottom: 24px;
-        justify-content: space-between;
-        overflow: inherit;
-    }
-
-    .health-cards-list .card-wrapper {
-        position: relative;
-        width: calc(100% / 3 - 12px);
-        min-height: 184px;
-    }
-
-    .health-cards-list .card-preview {
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        padding-right: 60px;
-        padding-left: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        z-index: 1;
-        font-family: "Roboto Flex", sans-serif;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 1.3;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: rgb(38 53 94);
-        transition-duration: .3s;
-    }
-
-    .health-cards-list .card-preview .card-preview_bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-    }
-
-    .health-cards-list .card-wrapper:hover .card-preview {
-        opacity: 0;
-    }
-
-    .health-cards-list .card-hover_title {
-        padding-right: 40px;
-        font-size: 24px;
-    }
-
-    .health-series__description {
-        max-width: 960px;
-    }
-
-    .health-series__btn-wrapper {
-        display: none;
-    }
-
-    .employers-cta {
-        margin-top: 200px;
-        padding-top: 181px;
-        padding-bottom: 150px;
-    }
-
-    .employers-cta p {
-        max-width: 1000px;
-    }
+  .employers-cta p {
+    max-width: 1000px;
+  }
 }
 
 @media (min-width: 1280px) {
-    .section {
-        padding-top: 200px;
-    }
+  .section {
+    padding-top: 200px;
+  }
 
-    .health-series .container {
-        position: relative;
-    }
+  .health-series .container {
+    position: relative;
+  }
 
-    .health-series_decor {
-        display: inline-block;
-        position: absolute;
-        width: 1000px;
-        height: 870px;
-        right: -640px;
-        top: 0;
-        z-index: -1;
-    }
+  .health-series_decor {
+    display: inline-block;
+    position: absolute;
+    width: 1000px;
+    height: 870px;
+    right: -640px;
+    top: 0;
+    z-index: -1;
+  }
 }
