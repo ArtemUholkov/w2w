@@ -81,10 +81,10 @@ p {
 }
 
 .hero_description {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+ }
 
 .hero_img {
   height: 383px;
