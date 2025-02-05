@@ -129,19 +129,6 @@
         display: none;
     }
 
-    .slider-section__container {
-        display: flex;
-        width: 327px;
-        height: 379px;
-        padding: 18px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 24px;
-        border: 1px solid #4F5058;
-    }
-
     .slider-section__image-mob {
         display: block;
         width: 284px;
