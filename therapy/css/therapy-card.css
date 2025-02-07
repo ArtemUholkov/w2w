@@ -88,7 +88,7 @@
         width: 1833px;
         height: 1107px;
         z-index: -1;
-        animation: therapyDecorMoving 6s linear infinite alternate;
+        animation: therapyDecorMoving 12s linear infinite alternate;
     }
 
     @keyframes therapyDecorMoving {
@@ -96,11 +96,11 @@
             left: -700px;
             top: 0;
         }
-        33% {
+        45% {
             left: 700px;
             top: 170px;
         }
-        66% {
+        80% {
             left: -400px;
             top: 370px;
         }
