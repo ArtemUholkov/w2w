@@ -68,9 +68,11 @@
         position: relative;
         width: calc(100% / 4 - 15px);
         height: 436px;
+        padding-top: 254px;
     }
 
     .service-card__content-image-container {
+        position: absolute;
         top: 14px;
         left: 14px;
         right: 14px;
@@ -93,7 +95,6 @@
     }
 
     .service-card:hover .service-card__content-image-container {
-        position: absolute;
         top: 0;
         left: 0;
         right: 0;

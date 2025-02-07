@@ -38,6 +38,12 @@
     color: rgb(52 180 244);
 }
 
+.shot-option-card_footer-price-variations {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
 @media (min-width: 768px) {
     .shot-option-cards {
         grid-row-gap: 20px;

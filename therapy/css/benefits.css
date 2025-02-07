@@ -78,6 +78,7 @@
         margin-right: 0;
         padding-right: 0;
         grid-auto-flow: column;
+        overflow: visible;
     }
 
     .benefits_section-list-item-wrapper {
