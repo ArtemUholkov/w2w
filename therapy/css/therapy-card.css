@@ -1,0 +1,108 @@
+.therapy-cards {
+    grid-row-gap: 20px;
+}
+
+.therapy-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 24px;
+    background-color: rgb(13 15 21);
+}
+
+.therapy-card_img {
+    margin-bottom: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.therapy-card_img img {
+    height: 100%;
+    width: 100%;
+    max-width: none;
+    object-fit: cover;
+}
+
+.therapy-card_main p,
+.therapy-card_main li {
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+}
+
+.therapy-card_main p:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+.therapy-card_main .therapy-card_title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(247 243 235);
+}
+
+.therapy-card_main ul {
+    margin-top: 12px;
+}
+
+.therapy-card_footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(52 180 244);
+}
+
+.therapy-card_footer.therapy-card_footer-price-variations {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.therapy-card_price-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.therapy-cards_decor {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+    .therapy-options_section .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .therapy-cards {
+        grid-gap: 40px 20px;
+    }
+
+    .therapy-cards_decor {
+        position: absolute;
+        left: -720px;
+        top: 50px;
+        display: block;
+        width: 1833px;
+        height: 1107px;
+        z-index: -1;
+        animation: therapyDecorMoving 6s linear infinite alternate;
+    }
+
+    @keyframes therapyDecorMoving {
+        0% {
+            left: -700px;
+            top: 0;
+        }
+        33% {
+            left: 700px;
+            top: 170px;
+        }
+        66% {
+            left: -400px;
+            top: 370px;
+        }
+    }
+}
