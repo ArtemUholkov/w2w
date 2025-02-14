@@ -1,5 +1,5 @@
-.hero_main-img-desktop {
-    display: none;
+.benefits-section {
+    padding-bottom: 100px;
 }
 
 .benefits_section-description-wrapper {
@@ -64,6 +64,11 @@
 }
 
 @media (min-width: 1280px) {
+    .benefits-section {
+        padding-bottom: 200px;
+        overflow: hidden;
+    }
+
     .benefits_section-list_scroll-btn {
         display: none;
     }
