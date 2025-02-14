@@ -105,11 +105,10 @@
     }
 
     .benefits_section-list-item {
-        height: auto;
         padding: 30px;
     }
 
-    .benefits_section-list-item-wrapper:nth-child(1) {
+    .benefits_section-list-item-wrapper:nth-child(4) {
         grid-row: 2 / 4;
     }
 

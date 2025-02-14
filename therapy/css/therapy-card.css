@@ -71,6 +71,10 @@
 }
 
 @media (min-width: 1280px) {
+    .therapy-options_section {
+        overflow: hidden;
+    }
+
     .therapy-options_section .container {
         position: relative;
         z-index: 1;
