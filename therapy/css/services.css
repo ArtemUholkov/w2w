@@ -29,6 +29,10 @@
     height: 100%;
 }
 
+.service-card__content-text {
+    font-weight: 300;
+}
+
 .service-card__content-title {
     margin-bottom: 12px;
     font-size: 20px;

@@ -121,7 +121,7 @@
         width: 1833px;
         height: 1107px;
         z-index: -1;
-        animation:benefitsDecorMoving 12s linear infinite alternate;
+        animation:benefitsDecorMoving 15s linear infinite alternate;
     }
 
     @keyframes benefitsDecorMoving {

@@ -167,3 +167,15 @@
     max-width: none;
   }
 }
+
+@media (min-width: 1024px) {
+  .bprice_img {
+    max-width: 490px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bprice_img {
+    max-width: 634px;
+  }
+}
