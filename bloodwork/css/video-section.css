@@ -178,7 +178,7 @@
         left: -740px;
         top: -600px;
         z-index: -1;
-        animation: videoDecorMoving 6s linear infinite alternate;
+        animation: videoDecorMoving 12s linear infinite alternate;
     }
 
     @keyframes videoDecorMoving {

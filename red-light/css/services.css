@@ -35,6 +35,10 @@
     color: inherit;
 }
 
+.service-card__content-text {
+    font-weight: 300;
+}
+
 .service-card__hidden-text {
     display: inline-flex;
     align-items: center;
