@@ -1,3 +1,7 @@
+.cta-banner {
+  margin-top: 100px;
+}
+
 .cta-banner__inner-wrapper {
   position: relative;
   padding: 32px 18px;
@@ -64,7 +68,7 @@
 
 @media (min-width: 1280px) {
   .cta-banner {
-    padding-top: 200px;
+    margin-top: 200px;
   }
 
   .cta-banner__inner-wrapper {

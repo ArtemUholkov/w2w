@@ -215,7 +215,7 @@
   }
 }
 
-@media (max-width: 1660px) {
+@media (max-width: 1279px) {
   .faq-section__grid {
     display: grid;
     grid-template-columns: repeat(1, auto);
