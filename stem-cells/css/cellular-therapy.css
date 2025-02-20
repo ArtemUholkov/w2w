@@ -1,0 +1,89 @@
+.cellular-therapy {
+    margin-top: 100px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: rgb(13 15 21);
+}
+
+.cellular-therapy__bg {
+    display: none;
+}
+
+.cellular-therapy__description {
+    display: grid;
+    grid-row-gap: 4px;
+    margin-bottom: 32px;
+}
+
+.cellular-therapy__list {
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+.cellular-therapy__card {
+    min-height: 402px;
+    border-radius: 24px;
+    border: 1px solid rgb(79 80 88);
+    background-color: rgb(13 15 21);
+    overflow: hidden;
+}
+
+.cellular-therapy__card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cellular-therapy__card h3 {
+    margin-bottom: 12px;
+    color: rgb(255 255 255);
+}
+
+.cellular-therapy__card-text {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .cellular-therapy__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cellular-therapy__card-img {
+        height: 244px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .cellular-therapy {
+        position: relative;
+        padding-top: 40px;
+        background-color: transparent;
+        z-index: 1;
+    }
+
+    .cellular-therapy__description {
+        max-width: 750px;
+        margin-bottom: 42px;
+    }
+
+    .cellular-therapy__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cellular-therapy__card h3 {
+        font-size: 24px;
+    }
+
+    .cellular-therapy__bg {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 528px;
+        z-index: -1;
+    }
+}
