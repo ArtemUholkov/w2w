@@ -105,7 +105,7 @@
     .benefits-section_decor {
         position: absolute;
         left: -440px;
-        top: 130px;
+        top: -230px;
         display: block;
         width: 1833px;
         height: 1107px;
@@ -116,19 +116,15 @@
     @keyframes benefitsDecorMoving {
         0% {
             left: -440px;
-            top: 130px;
+            top: -230px;
         }
-        30% {
+        50% {
             left: 540px;
-            top: 15px;
-        }
-        60% {
-            left: -80px;
             top: -275px;
         }
         100% {
             left: -440px;
-            top: 130px;
+            top: -230px;
         }
     }
 }
