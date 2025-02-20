@@ -113,7 +113,7 @@
         opacity: .7;
         filter: blur(100px);
         z-index: -1;
-        animation:benefitsDecorMoving 12s linear infinite alternate;
+        animation:benefitsDecorMoving 8s linear infinite alternate;
     }
 
     @keyframes benefitsDecorMoving {
@@ -121,10 +121,10 @@
             transform: translate(0, 0);
         }
         33% {
-            transform: translate(250px, -150px)
+            transform: translate(200px, -250px)
         }
         66% {
-            transform: translate(250px, -50px)
+            transform: translate(350px, -50px)
         }
         100% {
             transform: translate(0, 0);
