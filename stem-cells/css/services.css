@@ -1,7 +1,7 @@
 .services_list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .service-card {
