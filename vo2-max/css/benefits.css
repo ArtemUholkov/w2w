@@ -107,31 +107,30 @@
 
     .benefits-section_decor {
         position: absolute;
-        left: -440px;
-        top: 130px;
+        left: -240px;
+        top: 230px;
         display: block;
-        width: 1833px;
-        height: 1107px;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, #34b4f4 0%, transparent 70%);
+        opacity: .7;
+        filter: blur(100px);
         z-index: -1;
-        animation:benefitsDecorMoving 12s linear infinite alternate;
+        animation:benefitsDecorMoving 8s linear infinite alternate;
     }
 
     @keyframes benefitsDecorMoving {
         0% {
-            left: -440px;
-            top: 130px;
+            transform: translate(0, 0);
         }
-        30% {
-            left: 540px;
-            top: 15px;
+        33% {
+            transform: translate(200px, -250px)
         }
-        60% {
-            left: -80px;
-            top: -275px;
+        66% {
+            transform: translate(350px, -50px)
         }
         100% {
-            left: -440px;
-            top: 130px;
+            transform: translate(0, 0);
         }
     }
 }
