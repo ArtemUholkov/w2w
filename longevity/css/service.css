@@ -262,7 +262,7 @@ sub {
   margin-top: 12px;
 }
 
-@media (max-width: 1660px) {
+@media (max-width: 1500px) {
   .service-section__container-content {
     grid-template-columns: repeat(3, 340px);
   }

@@ -6,7 +6,10 @@
   max-width: 1600px;
   position: relative;
 }
-
+.faq-section__item-container.active .faq-section__item-visible-btn {
+  transform: rotate(180deg);
+  transition: all 0s;
+}
 .faq-section__grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -118,7 +121,7 @@
   border: none;
   background-color: #fff;
   cursor: pointer;
-  transition: all 0.9s;
+  /* transition: all 0.9s; */
 }
 .faq-section__item-visible svg {
   transition: all 0.9s;
