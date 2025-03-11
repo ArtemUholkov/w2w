@@ -1,5 +1,5 @@
 .st_texts {
-  padding-top: 200px;
+  padding-top: 100px;
   padding-left: 250px;
   padding-right: 250px;
   padding-bottom: 300px;
@@ -13,7 +13,7 @@
 .gradient5 {
   position: absolute;
   top: 50%;
-  left: 10%;
+  right: 0;
   width: 400px;
   height: 400px;
   background: radial-gradient(circle, rgba(52, 180, 244, 1) 0%, rgba(52, 180, 244, 0) 70%);
@@ -24,18 +24,6 @@
 }
 
 /* Gradient 2 */
-.gradient6 {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(232, 117, 148, 1) 0%, rgba(232, 117, 148, 0) 70%);
-  filter: blur(150px) brightness(1.1); /* Increased blur and brightness */
-  transform: translate(-60%, -50%);
-  z-index: 2;
-  animation: glow6 3s infinite alternate-reverse;
-}
 
 /* Animations with synchronized and independent moves */
 @keyframes glow5 {
@@ -129,9 +117,9 @@
 }
 @media (max-width: 800px) {
   .st_texts {
-    padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 0;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 150px;
   }
   .st_texts_wrapper {
