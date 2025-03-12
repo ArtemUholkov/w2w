@@ -73,7 +73,7 @@
 }
 @media (max-width: 1850px) {
   .st_before-after_title {
-    padding-left: 100px;
+    padding-left: 70px;
     max-width: 1470px;
   }
 }
@@ -155,11 +155,11 @@
 }
 
 .st_before_after_image_before {
-  animation: fadeInOut 6s infinite;
+  animation: fadeInOut 20s infinite;
 }
 
 .st_before_after_image_after {
-  animation: fadeInOut 6s infinite 3s; /* Delayed by 3 seconds to alternate with the first image */
+  animation: fadeInOut 20s infinite 5s; /* Delayed by 3 seconds to alternate with the first image */
 }
 .scroll-right-bnt2 {
   display: none;
@@ -189,6 +189,7 @@
 
 @keyframes fadeInOut {
   0%,
+  50%,
   100% {
     opacity: 0;
   }
@@ -199,7 +200,7 @@
 }
 .st_before_after_images_wrapper_left {
   right: initial;
-  left: 15%;
+  left: 20%;
 }
 
 @media (max-width: 1750px) {
@@ -207,7 +208,7 @@
     right: 10%;
   }
   .st_before_after_images_wrapper_left {
-    left: 5%;
+    left: 10%;
   }
   .st_before_after_item {
     max-width: 75%;
@@ -259,6 +260,8 @@
 
   .st_before-after_title {
     margin-bottom: 42px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .st_before-after_wrapper::-webkit-scrollbar {
