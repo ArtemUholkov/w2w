@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Start the cycle every 1.5 seconds
-    setInterval(cycleImages, 3000);
+    setInterval(cycleImages, 1500);
   }
 });
 document.addEventListener('DOMContentLoaded', function () {

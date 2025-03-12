@@ -91,11 +91,19 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-radius: 24px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
   background: #0d0f15;
   position: relative;
   z-index: 3;
 }
+.st_bef-aft_left_item {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
 .st_bef-aft_left_item {
   align-self: flex-start;
   align-items: flex-end;
