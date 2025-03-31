@@ -26,6 +26,7 @@
 }
 
 .priming-bundle .item-icon {
+    width: 100%;
     grid-row: span 2;
     transform: translateY(-4px);
 }
