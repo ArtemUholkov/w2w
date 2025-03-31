@@ -21,14 +21,14 @@
 
 .priming-bundle .item-text-wrapper {
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 76px 1fr;
     grid-gap: 12px 16px;
 }
 
 .priming-bundle .item-icon {
     width: 100%;
     grid-row: span 2;
-    transform: translateY(-4px);
+    transform: translateY(-12px);
 }
 
 .priming-bundle .item-text-wrapper h3 {
