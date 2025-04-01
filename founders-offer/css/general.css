@@ -156,6 +156,10 @@ p {
     padding-right: 24px;
 }
 
+.item-img-desktop {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .button-wrapper .btn {
         max-width: 300px;
@@ -164,6 +168,14 @@ p {
     .four-in-row {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 20px;
+    }
+
+    .item-img-desktop {
+        display: block;
+    }
+
+    .item-img-mobile {
+        display: none;
     }
 }
 
