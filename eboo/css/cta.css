@@ -1,0 +1,63 @@
+.cta {
+    margin-top: 100px;
+}
+
+.cta__inner {
+    display: grid;
+    padding: 12px;
+    grid-row-gap: 42px;
+    border-radius: 24px;
+    background-color: #0D0F15;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: right bottom 37%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='230' height='184' fill='none' viewBox='0 0 230 184'%3E%3Cpath fill='%231A1D29' fill-rule='evenodd' d='m35.637.178 78.175 153.008 44.784-64.287L98.507.178h157.426l-60.09 88.721 44.785 64.287L318.803.178h35.521l-95.931 183.61h-35.53l-45.643-67.391-45.643 67.391h-35.53L.115.178h35.522Zm164.569 28.99h-45.973l22.987 32.998 22.986-32.997Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.cta__inner h2 {
+    margin-bottom: 24px;
+}
+
+.cta__inner .button-wrapper {
+    margin-top: 24px;
+}
+
+.cta__inner-img {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.cta__inner-img img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+    .cta__inner {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 32px;
+        text-align: left;
+        background-position: center;
+        background-size: 540px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='699' height='362' fill='none' viewBox='0 0 699 362'%3E%3Cpath fill='%231A1D29' fill-rule='evenodd' d='M70.467.01 224.59 301.671l88.293-126.744L194.417.01h310.368L386.318 174.927l88.294 126.744L628.736.011h70.031L509.636 362.002h-70.049l-89.986-132.864-89.986 132.864h-70.049L.435.01h70.032ZM394.92 57.167h-90.637l45.318 65.054 45.319-65.054Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    }
+
+    .cta__inner .button-wrapper {
+        max-width: 310px;
+    }
+
+    .cta__inner-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .cta {
+        margin-top: 200px;
+    }
+}

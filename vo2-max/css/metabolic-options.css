@@ -1,0 +1,92 @@
+.metabolic-options__list {
+    display: grid;
+    grid-gap: 20px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.metabolic-options__list-item {
+    position: relative;
+    height: 396px;
+    overflow: hidden;
+}
+
+.metabolic-options__list-item,
+.metabolic-options__list-item-description {
+    padding: 20px;
+    border-radius: 24px;
+    background-color: #0D0F15;
+}
+
+.metabolic-options__list-item-img {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.metabolic-options__list-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.metabolic-options__list-item h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.metabolic-options__list-item-description {
+    position: absolute;
+    inset: 0;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: .2px;
+    transition-duration: .25s;
+    transform: translateY(120%);
+}
+
+.metabolic-options__list-item-subtitle {
+    margin-bottom: 10px;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #34B4F4;
+}
+
+.metabolic-options__list-item:hover .metabolic-options__list-item-description {
+    transform: translateY(0);
+}
+
+@media (min-width: 425px) {
+    .metabolic-options__list-item {
+        height: 414px;
+    }
+
+    .metabolic-options__list-item-description {
+        line-height: 1.4;
+    }
+
+    .metabolic-options__list-item-img {
+        height: 268px;
+    }
+}
+
+@media (min-width: 768px) {
+    .metabolic-options__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .metabolic-options-section h2 {
+        max-width: 800px;
+    }
+    
+    .metabolic-options__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

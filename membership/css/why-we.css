@@ -1,0 +1,201 @@
+.why-we-section h2 {
+    text-align: center;
+}
+
+.why-we-list {
+    display: grid;
+    grid-row-gap: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #0D0F15;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.why-we-list-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-column-gap: 12px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: #1A1D29;
+    align-items: center;
+    line-height: 1.4;
+    letter-spacing: .2px;
+    transition-duration: .25s;
+}
+
+.why-we-list-item.active {
+    background-color: #34B4F4;
+}
+
+@media (min-width: 1024px) {
+    .why-we-list {
+        max-width: 1282px;
+        grid-column-gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 42px;
+    }
+
+    .why-we-list-item {
+        padding: 20px 24px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        border-radius: 16px;
+        font-size: 16px;
+    }
+
+    .why-we-list-item-icon {
+        height: 80px;
+        margin-bottom: 12px;
+    }
+}
+
+.why-we-section .video-card {
+    position: relative;
+    display: inline-block;
+    height: 64vw;
+    margin-bottom: 32px;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.why-we-section .video-preloader {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.why-we-section .video-card .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(247, 243, 235, 0.60);
+    border-width: 0;
+    color: #fff;
+    border-radius: 100%;
+}
+
+.why-we-section .video-card .play-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.why-we-section .video-modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    z-index: 1000;
+}
+
+.why-we-section .video-modal.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.why-we-section .video-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .6);
+}
+
+.why-we-section .video-modal__dialog {
+    position: relative;
+    width: calc(100% - 8px);
+    max-width: 945px;
+    border: 1px solid #4F5058;
+    background-color: #1A1D29;
+    border-radius: 12px;
+}
+
+.why-we-section .video-modal__ratio {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.why-we-section .video-modal__ratio > * {
+    position: absolute;
+    inset: 0;
+}
+
+.why-we-section .video-modal__ratio iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.why-we-section .video-modal__close {
+    position: absolute;
+    right: 6px;
+    top: calc(100% + 10px);
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .why-we-section .video-card {
+        height: 600px;
+        margin-bottom: 42px;
+    }
+
+    .video-modal__dialog {
+        padding: 40px;
+    }
+
+    .why-we-section .video-modal__close {
+        top: 13px;
+        right: 13px;
+    }
+
+    .why-we-section .video-card .play {
+        width: 110px;
+        height: 110px;
+        cursor: pointer;
+        transition-duration: .25s;
+    }
+
+    .why-we-section .video-card:hover .play {
+        transform: scale(1.1) translate(-50%, -50%);
+    }
+
+    .why-we-section .video-card .play-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .why-we-section .button-wrapper {
+        justify-content: center;
+    }
+
+    .why-we-section .button-wrapper .btn {
+        max-width: 240px;
+    }
+}
+
+
