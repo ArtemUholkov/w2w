@@ -1,0 +1,213 @@
+.hero-section {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-video-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .hero-video-wrapper {
+        height: 61.33vw;
+    }
+}
+
+.hero-video-wrapper:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100% - 25.6vw);
+    background-image: linear-gradient(0deg, #1A1D29 30.9%, rgba(26, 29, 41, 0.00) 75.28%);
+}
+
+.hero-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-title-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -16px;
+}
+
+.hero-title-img__desktop {
+    display: none;
+}
+
+.hero-section-title {
+    display: none;
+}
+
+.hero-section-text {
+    position: relative;
+    margin-top: -100px;
+    z-index: 1;
+}
+
+.hero-section-description {
+    width: 100%;
+    max-width: 272px;
+    margin-left: 50%;
+    margin-bottom: 32px;
+    line-height: 1.4;
+    letter-spacing: .2px;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        max-height: 990px;
+    }
+
+    .hero-title-img__mobile {
+        display: none;
+    }
+
+    .hero-title-img__desktop {
+        display: block;
+        transition-duration: .6s;
+    }
+
+    .hero-section-description {
+        max-width: none;
+        margin-bottom: 42px;
+    }
+
+    .hero-section .button-wrapper .btn {
+        max-width: 240px;
+    }
+
+    .hero-title-wrapper {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .hero-section {
+        height: 100vh;
+        text-align: inherit;
+    }
+
+    .hero-section-text {
+        position: absolute;
+        left: 0;
+        top: 60vh;
+        width: 100%;
+        margin-top: 0;
+        padding-bottom: 54px;
+        z-index: 1;
+        transition-duration: .3s;
+        overflow: hidden;
+    }
+
+    .hero-section-description {
+        display: inline-block;
+        width: auto;
+        margin-top: -22px;
+        white-space: nowrap;
+        transition-duration: .6s;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero-video-wrapper:after {
+        height: 565px;
+    }
+
+    .hero-title-wrapper {
+        position: relative;
+    }
+
+    .hero-section-text {
+        position: absolute;
+        left: 0;
+        top: 60vh;
+        width: 100%;
+        margin-top: 0;
+        padding-bottom: 54px;
+        z-index: 1;
+        transition-duration: .3s;
+    }
+
+    .hero-section-text:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgb(13 15 21 / 0%);
+        transform: scale(.5);
+        transition-duration: .6s;
+        transition-timing-function: ease-out;
+        z-index: -1;
+    }
+
+    .hero-video-wrapper:after {
+        height: 320px;
+    }
+
+    .hero-section-title {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        opacity: 0;
+        z-index: -1;
+        font-size: 42px;
+        transition-duration: .6s;
+        transform: translateX(-50%);
+    }
+
+    .hero-section-text .button-wrapper {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 240px;
+        transform: translateX(-50%);
+        transition-duration: .6s;
+    }
+
+    .hero-section.active .hero-section-text {
+        position: fixed;
+        top: 0;
+        padding-top: 140px;
+        padding-bottom: 0;
+    }
+
+    .hero-section.active .hero-section-text:after {
+        background-color: rgb(13 15 21 / 100%);
+        transform: scale(1);
+    }
+
+    .hero-section.active .hero-title-img__desktop {
+        opacity: 0;
+        height: 60px;
+    }
+
+    .hero-section.active .hero-section-description {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+        transform: translateX(0);
+    }
+
+    .hero-section.active .hero-section-text .button-wrapper {
+        left: calc(100% - 260px);
+        transform: translate(0, -50%);
+        bottom: 0;
+    }
+
+    .hero-section.active .hero-section-title {
+        left: 0;
+        transform: translateX(0);
+        opacity: 1;
+        z-index: 1;
+    }
+}

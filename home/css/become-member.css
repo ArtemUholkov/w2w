@@ -1,0 +1,207 @@
+.become-member-section {
+    padding-top: 120px;
+}
+
+.become-member_inner {
+    position: relative;
+    padding-bottom: 77px;
+    border-radius: 24px;
+    background-color: #0D0F15;
+    overflow: hidden;
+}
+
+.become-member_title-wrapper {
+    margin-bottom: 24px;
+}
+
+.become-member-section h2 {
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.become-member_video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #000;
+    border-radius: 24px;
+}
+
+.become-member_video video {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.become-member_text {
+    display: grid;
+    grid-row-gap: 24px;
+    padding: 28px 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.become-member_text-item:not(:last-of-type) {
+    position: relative;
+    z-index: 1;
+}
+
+.become-member_text-item:not(:last-of-type):before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    height: calc(100% + 24px);
+    width: 3px;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.become-member_inner .btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row-gap: 8px;
+    margin-top: 20px;
+}
+
+.become-member_inner .btn-inverse {
+    max-width: 240px;
+    gap: 8px;
+    background-color: #1A1D29;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.become-member_inner .btn-inverse:hover {
+    background-color: #34B4F4;
+}
+
+.become-member_text-item-title {
+    display: flex;
+    column-gap: 12px;
+    margin-bottom: 12px;
+}
+
+.become-member_text-item-title h3 {
+    margin-bottom: 0;
+}
+
+.become-member_text-item-icon {
+    width: 52px;
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    background-color: #0D0F15;
+}
+
+.become-member_text-item-content {
+    padding-left: 66px;
+}
+
+.become-member_list {
+    display: grid;
+    grid-row-gap: 12px;
+}
+
+.become-member_list-item {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    padding: 5px;
+    grid-column-gap: 6px;
+    border-radius: 8px;
+    border: 1px solid #1A1D29;
+    align-items: center;
+    background-color: #0D0F15;
+}
+
+@media (min-width: 768px) {
+    .become-member_inner .btn-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .become-member_inner .btn svg {
+        flex-shrink: 0;
+    }
+
+    .become-member_title-wrapper {
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 56px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .become-member_title-wrapper {
+        text-align: center;
+    }
+
+    .become-member_text-item-title h3 {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .become-member_inner {
+        display: grid;
+        padding-bottom: 0;
+        grid-template-columns: 340px 1fr;
+        align-items: start;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-image: url("data:image/svg+xml,%3Csvg width='798' height='647' viewBox='0 0 798 647' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M128.475 0.34668L410.37 562.043L571.822 326.055L355.168 0.34668H922.79L706.136 326.019L867.588 562.043L1149.48 0.34668H1277.55L931.659 674.397H803.554L638.979 426.985L474.404 674.397H346.299L0.405273 0.34668H128.475ZM721.852 106.776H556.106L638.979 227.927L721.852 106.776Z' fill='%231A1D29' fill-opacity='0.3'/%3E%3C/svg%3E%0A");
+    }
+
+    .become-member_list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 12px;
+    }
+
+    .become-member_inner .btn-wrapper {
+        position: static;
+        padding-bottom: 12px;
+    }
+
+    .become-member_video {
+        height: 100%;
+    }
+
+    .become-member_video video {
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .become-member_inner {
+        align-items: center;
+    }
+
+    .become-member_text {
+        padding-left: 36px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .become-member_inner {
+        grid-template-columns: 440px 1fr;
+    }
+
+    .become-member_video {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .become-member_text {
+        max-width: 900px;
+    }
+}
