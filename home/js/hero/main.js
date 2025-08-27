@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const ACTIVE_CLASS = 'is-active';
     const mq = window.matchMedia('(min-width: 1024px)');
 
-    const PAUSE_MS = 400;
+    const PAUSE_MS = 300;
     const RESET_THRESHOLD = 2;
 
     let enabled = false;

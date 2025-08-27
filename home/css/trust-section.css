@@ -21,6 +21,7 @@
 }
 
 .trust-section h2 {
+    max-width: 335px;
     padding-right: 48px;
 }
 
@@ -88,6 +89,8 @@
     justify-content: center;
     background-color: #f7f3eb;
     border-radius: 100%;
+    border-width: 0;
+    font-size: 25px;
     z-index: 1;
 }
 
@@ -193,11 +196,11 @@
         justify-content: center;
     }
 
-    .modal__dialog {
+    .video-review_item .modal__dialog {
         width: 680px;
     }
 
-    .modal-close {
+    .video-review_item .modal-close {
         position: fixed;
         top: 30px;
         right: 30px;
@@ -232,6 +235,11 @@
         left: 30px;
         bottom: 30px;
         font-size: 24px;
+        transition-duration: .25s;
+    }
+
+    .video-review:hover .video-review_name {
+        color: #34b4f4;
     }
 
     .video-review_btn {
