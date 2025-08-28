@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W2W - Home page</title>
+    <title>W2W - About us</title>
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,31 +14,98 @@
             rel="stylesheet"
     />
 
-    <!--  Swiper styles for partners running row  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <!--Styles-->
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/trust-section.css" />
-    <link rel="stylesheet" href="css/become-member.css" />
-    <link rel="stylesheet" href="css/meet-alien.css" />
+    <link rel="stylesheet" href="css/video.css" />
     <link rel="stylesheet" href="css/founder.css" />
-    <link rel="stylesheet" href="css/subscribe-form.css" />
+    <link rel="stylesheet" href="css/cta.css" />
 
 </head>
 <body>
-    <main></main>
+    <main>
+        <section class="hero">
+            <div class="hero_img">
+                <img src="img/hero/hero-mobile.webp" alt="About Us" class="hero_bg-mobile" />
+                <img src="img/hero/hero-desktop.webp" alt="About Us" class="hero_bg" />
+            </div>
+            <div class="container">
+                <h1>About us</h1>
+                <div class="hero_description">
+                    <div class="hero_description-wrapper">
+                        <p>
+                            At Ways2Well, we believe healthcare should be proactive, personalized, and accessible. Our mission is to help individuals take control of their health by providing advanced, preventive care that go beyond traditional healthcare models. Through innovative diagnostic testing, physician-guided treatment plans, and a focus on whole-body wellness, we empower people to identify potential health concerns early and make informed decisions for a healthier future.
+                        </p>
+                        <p>
+                            With two clinics — our <a href="" target="_blank">Longevity Lab</a> in Austin, TX, and our clinic in Houston, TX — we bring our vision of longevity-focused care directly to the communities we serve. Whether in-person or through virtual access, we’re redefining what it means to stay well, because better health starts with better access to knowledge and care.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section video-section">
+            <div class="container">
+                <div class="video-wrapper-inner"
+                     data-video-modal-open
+                     data-modal-target="#videoModalFounder"
+                     data-video-sources='[
+                    {"src":"video/founder.mp4","type":"video/mp4"}
+                ]'
+                >
+                    <img src="img/video/preview.webp" alt="Brigham Buhler" class="video-preview">
+                    <div class="video-card">
+                        <span class="video_btn"><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 17"><path fill="#26355E" d="M12.518 7.686a.664.664 0 0 1 0 1.166L7.262 11.72a.664.664 0 0 1-.982-.583V5.403c0-.505.54-.825.982-.583l5.256 2.866Z"/></svg></span>
+                        <p class="title">Brigham Buhler</p>
+                    </div>
+                </div>
+            </div>
+            <div id="videoModalFounder" class="modal" aria-hidden="true">
+                <div class="modal__overlay" data-close></div>
+                <div class="modal__dialog">
+                    <button data-close aria-label="Close" class="modal-close">×</button>
+                    <video data-modal-video controls preload="metadata" playsinline></video>
+                </div>
+            </div>
+        </section>
+        <section class="section our-founder">
+            <div class="container">
+                <div class="our-founder_title-wrapper">
+                    <h2>Our Founder</h2>
+                </div>
+                <div class="our-founder_inner">
+                    <img src="img/founder/founder.webp" alt="Brigham Buhler">
+                    <div class="our-founder_inner-text">
+                        <p>Brigham Buhler is a healthcare entrepreneur transforming America's broken system. As founder of Ways2Well, owner of Revive Rx Pharmacy, and an investor in psychedelic research, he champions a model of care that prioritizes patients over profits through preventative medicine, transparency, and innovation. His work is guided by a few core convictions:</p>
+                        <ul>
+                            <li>Former insider’s perspective: With deep experience navigating the corrupt systems of pharmacy benefit managers (PBMs), insurance companies, and the FDA, Brigham knows firsthand how the system is stacked against patients.</li>
+                            <li>Uncompromising advocate: He pushes to expose and dismantle the corporate capture of American healthcare.</li>
+                            <li>Bold truth-teller: He believes in revealing the realities of the insurance Ponzi scheme and providing practical ways to bypass outdated systems.</li>
+                            <li>Relentless reformer: He is dedicated to replacing a model that profits off sickness with one centered on health, longevity, and patient empowerment.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <div class="cta_inner">
+                    <h2>Ready to be part of the Ways2Well Community?</h2>
+                    <a href="" class="btn btn-primary">
+                    <span>Join membership</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none">
+                        <rect width="2" height="14" x="5" y="13.5" fill="#26355E" rx="1" transform="rotate(-90 5 13.5)"></rect>
+                        <path fill="#26355E" d="M11.293 17.793a1 1 0 0 0 1.414 1.414l6-6a1 1 0 0 0 .03-1.383l-5.5-6a1 1 0 0 0-1.474 1.352l4.853 5.294-5.323 5.323Z"></path>
+                    </svg>
+                </a>
+                </div>
+            </div>
+            <img src="img/cta/cta-bg.webp" alt="Join membership" class="cta_bg">
+        </section>
+    </main>
 </body>
 
-<!--  Swiper script for partners running row  -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="js/hero/main.js"></script>
-<script src="js/partners/main.js"></script>
-<script src="js/meet-alien/main.js"></script>
-<script src="js/reviews/main.js"></script>
-<script src="js/founder/main.js"></script>
+<script src="js/video/main.js"></script>
 
 
 </html>
