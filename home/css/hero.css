@@ -24,11 +24,10 @@
 }
 
 .hero-section h1 {
-    max-width: 254px;
+    max-width: 290px;
     color: #fff;
     font-size: 16px;
     text-align: center;
-    font-variation-settings: normal;
 }
 
 .hero-section_list {
@@ -147,7 +146,7 @@
     }
 
     .hero-section h1 {
-        max-width: 500px;
+        max-width: 550px;
         font-size: 28px;
     }
 
