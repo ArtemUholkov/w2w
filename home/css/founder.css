@@ -189,6 +189,15 @@
     .founder-video-wrapper:hover .founder-video_btn svg {
         transform: scale(1.1);
     }
+
+    .founder-section .modal-close {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
 }
 
 @media (min-width: 1280px) {
