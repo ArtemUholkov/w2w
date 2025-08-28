@@ -49,6 +49,10 @@
         grid-column-gap: 24px;
     }
 
+    .our-founder_inner {
+        border-width: 0;
+    }
+
     .our-founder h2 {
         position: sticky;
         top: 32px;
@@ -60,6 +64,10 @@
 @media (min-width: 1280px) {
     .our-founder .container {
         grid-template-columns: 1fr 800px;
+    }
+
+    .our-founder_inner-text {
+        padding: 32px 42px 64px;
     }
 }
 
