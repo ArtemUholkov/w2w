@@ -1,0 +1,117 @@
+.safety-section h2 {
+    margin-bottom: 12px;
+}
+
+.safety-section_list {
+    display: grid;
+    grid-gap: 20px;
+    margin-top: 32px;
+    list-style-type: none;
+}
+
+.safety-section_list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 222px;
+    padding: 30px 20px;
+    border-radius: 16px;
+    background: rgba(149, 216, 249, 0.25);
+    text-align: center;
+    overflow: hidden;
+}
+
+.safety-section_list-item-icon {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    transition-duration: .25s;
+}
+
+.safety-section_list-item h3 {
+    margin-bottom: 40px;
+    color: #fff;
+    transition-duration: .25s;
+}
+
+.safety-section_list-item-text {
+    font-size: 20px;
+    transition-duration: .25s;
+}
+
+.safety-section_list-item-text .safety-section_list-item-description {
+    opacity: 0;
+    transition-duration: .25s;
+}
+
+.safety-section_list-item:hover .safety-section_list-item-icon {
+    opacity: 0;
+}
+
+.safety-section_list-item:hover .safety-section_list-item-text {
+    transform: translateY(-82px);
+}
+
+.safety-section_list-item:hover h3 {
+    margin-bottom: 10px;
+}
+
+.safety-section_list-item:hover .safety-section_list-item-description {
+    opacity: 1;
+}
+
+.safety-section_cta {
+    margin-top: 42px;
+    text-align: center;
+}
+
+.safety-section_cta .title {
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.safety-section_cta .btn {
+    margin-bottom: 42px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.safety-section_annotation:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .safety-section_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .safety-section_list-item h3 {
+        font-size: 16px;
+    }
+
+    .safety-section_list-item {
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .safety-section {
+        font-size: 20px;
+    }
+
+    .safety-section_list {
+        margin-top: 42px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .safety-section_list-item {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
