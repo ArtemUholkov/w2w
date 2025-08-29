@@ -81,16 +81,22 @@
     .difference-section .container {
         grid-template-columns: 1fr 1fr;
         align-items: center;
+        justify-items: flex-start;
     }
 }
 
 @media (min-width: 1280px) {
     .difference-section .container {
-        grid-template-columns: 1fr 572px;
+        grid-template-columns: 1fr 622px;
     }
 
     .difference_img {
         height: 374px;
+        padding-left: 50px;
+    }
+
+    .difference_text{
+        padding-right: 50px;
     }
 
     .difference_text-price-wrapper {
