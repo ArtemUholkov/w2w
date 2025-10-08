@@ -1,3 +1,11 @@
+.therapy-options_section h2 {
+    margin-bottom: 4px;
+}
+
+.therapy-options__subtitle {
+    margin-bottom: 24px;
+}
+
 .therapy-cards {
     grid-row-gap: 20px;
 }
@@ -14,9 +22,28 @@
 }
 
 .therapy-card_img {
+    position: relative;
     margin-bottom: 24px;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.therapy-card_img .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #95D8F9;
+    background-color: #0D0F15;
+    box-shadow: 0 0 14.999px 0 #34B4F4;
+    font-size: 14px;
+    color: #34B4F4;
+}
+
+.therapy-card_img .badge strong {
+    color: #fff;
+    font-size: 16px;
 }
 
 .therapy-card_img img {
@@ -66,6 +93,15 @@
     margin-bottom: 20px;
 }
 
+.therapy-card_price {
+    display: flex;
+    column-gap: 8px;
+}
+
+.therapy-card_price s {
+    color: #fff;
+}
+
 .therapy-cards_decor {
     display: none;
 }
@@ -78,6 +114,11 @@
     .therapy-options_section .container {
         position: relative;
         z-index: 1;
+    }
+
+    .therapy-options__subtitle {
+        margin-bottom: 42px;
+        font-size: 24px;
     }
 
     .therapy-cards {
