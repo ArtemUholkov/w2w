@@ -11,6 +11,7 @@
 }
 
 .therapy-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,16 +23,15 @@
 }
 
 .therapy-card_img {
-    position: relative;
     margin-bottom: 24px;
     border-radius: 8px;
     overflow: hidden;
 }
 
-.therapy-card_img .badge {
+.therapy-card .badge {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 14px;
+    right: 14px;
     padding: 8px 16px;
     border-radius: 8px;
     border: 1px solid #95D8F9;
@@ -41,7 +41,7 @@
     color: #34B4F4;
 }
 
-.therapy-card_img .badge strong {
+.therapy-card .badge strong {
     color: #fff;
     font-size: 16px;
 }
