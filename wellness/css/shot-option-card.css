@@ -1,0 +1,57 @@
+.shot-option-cards {
+    margin-top: 32px;
+    grid-row-gap: 10px;
+}
+
+.shot-option-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 322px;
+    gap: 24px;
+    padding: 20px;
+    border-radius: 24px;
+    background-color: rgb(13 15 21);
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.shot-option-card_title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+    color: rgb(247 243 235);
+}
+
+.shot-option-card_main .list_check {
+    margin-top: 12px;
+}
+
+.shot-option-card_main .list_check li:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+.shot-option-card_footer {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.4;
+    color: rgb(52 180 244);
+}
+
+.shot-option-card_footer-price-variations {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+@media (min-width: 768px) {
+    .shot-option-cards {
+        grid-row-gap: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .shot-option-cards {
+        grid-gap: 40px 20px;
+    }
+}
