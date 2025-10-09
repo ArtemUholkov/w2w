@@ -41,7 +41,8 @@
     grid-row-gap: 4px;
 }
 
-.hero_description-title p span {
+.hero_description-title p span,
+.hero_description-text span {
     color: #34B4F4;
 }
 
@@ -117,7 +118,7 @@
 
 @media (min-width: 1280px) {
     .hero_description-wrapper {
-        max-width: 828px;
+        max-width: 680px;
     }
 
     .hero h1 {
