@@ -42,8 +42,12 @@
 }
 
 .hero_description-title p span,
-.hero_description-text span {
+.hero_description-text strong {
     color: #34B4F4;
+}
+
+.hero_description-text strong {
+    font-weight: 900;
 }
 
 .hero_description-text {

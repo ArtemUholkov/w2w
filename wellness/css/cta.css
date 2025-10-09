@@ -17,6 +17,11 @@
     font-weight: 300;
 }
 
+.cta__text strong {
+    color: #34B4F4;
+    font-weight: 900;
+}
+
 .cta__text .btn {
     margin-top: 16px;
 }
